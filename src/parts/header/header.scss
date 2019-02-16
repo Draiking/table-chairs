@@ -1,7 +1,7 @@
 .main-head {
   min-height: 738px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   color: $white;
 
   .top-line {
@@ -12,14 +12,21 @@
   .social {
     font-size: 18px;
     font-weight: bold;
+    position: relative;
+    left: 106px;
     .fab {
       color: $white;
       margin: 0 5px;
+      &:hover {
+        color: $accent-yellow;
+      }
     }
+
   }
 
   .phone {
-    text-align: right;
+    position: relative;
+    left: 120px;
     p {
       font-size: 16px;
     }
@@ -28,7 +35,78 @@
     }
   }
 
+  .main-search {
+    position: relative;
+    top: 10px;
+  }
 
+
+  .logo{
+    img{
+      position: relative;
+      left: 107px;
+    }
+  }
+
+  .search {
+    position: relative;
+    .icon {
+      position: absolute;
+    }
+    input {
+      color: $white;
+      background: transparent;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      width: 700px;
+    }
+      &:hover, &:focus {
+      .icon {
+        display: none;
+      }
+    }
+  }
+
+  .main-button {
+    position: relative;
+    left: 100px;
+    top: 5px;
+    .button {
+      background: transparent;
+      border: 1px solid $aque-100;
+      padding: 8px 14px;
+    }
+    img {
+      margin: 0 10px;
+      width: 30px;
+    }
+  }
+
+  .main-menu {
+    position: relative;
+    top: 8px;
+    font-style: italic;
+    left: 50px;
+    ul {
+      padding: 4px;
+      li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 5px;
+        a {
+          color: $white;
+          text-decoration: none;
+        }
+        &.active, &:hover {
+          a {
+            color: $accent-yellow;
+            border-bottom: 1px solid $gray;
+          }
+        }
+      }
+    }
+  }
 
 
 
