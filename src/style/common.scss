@@ -1,5 +1,9 @@
 @import "color";
 
+body {
+  color: $white;
+}
+
 .button {
   color: $white;
   background-color: $black-button;
