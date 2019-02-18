@@ -16,5 +16,38 @@
       padding: 0 150px;
     }
   }
-
+}
+@media only screen and (max-width : 767px) {
+  .section-4 {
+    .info {
+      p {
+        padding: 0;
+      }
+    }
+    .creat-img {
+      padding-top: 120px;
+    }
+  }
+}
+@media only screen and (max-width : 480px) {
+  .section-4 {
+    .info {
+      h4 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 407px) {
+  .section-4 {
+    .creat-img {
+      padding-top: 50px;
+    }
+    .creat {
+      padding-top: 10px;
+    }
+  }
 }

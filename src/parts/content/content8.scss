@@ -1,6 +1,4 @@
 .section-8 {
-
-
   .top-text {
     font-family: 'OpenSansItalic-700', sans-serif;
   }
@@ -19,6 +17,19 @@
       border: 2px solid $accent-yellow;
     }
   }
+}
+@media only screen and (max-width : 1200px) {
+  .section-8 {
+    .work-img {
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 992px) {
+  .section-8 {
 
-
+  }
 }

@@ -54,6 +54,30 @@
       box-shadow: 8px 8px rgba(47,47,47,.3);
     }
   }
+}
 
+@media only screen and (max-width : 992px) {
+  .section-3 {
+    .pt0 {
+      padding-top: 30px;
+    }
+  }
+}
 
+@media only screen and (max-width : 767px) {
+  .section-3 {
+    .pl60 {
+      padding-left: 30px;
+    }
+  }
+}
+@media only screen and (max-width : 575px) {
+  .section-3 {
+    .popular-text {
+      text-align: center;
+    }
+    .card{
+      margin: 30px;
+    }
+  }
 }

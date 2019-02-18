@@ -37,6 +37,28 @@
       border: 2px solid $accent-yellow;
     }
   }
+}
 
-
+@media only screen and (max-width : 992px) {
+  .section-7 {
+    iframe {
+      width: 224px;
+    }
+    .col-md-8 {
+      padding-left: 20px;
+    }
+    .col-md-12 {
+      padding-top: 0;
+    }
+  }
+}
+@media only screen and (max-width : 767px) {
+  .section-7 {
+    .cerf {
+      padding-top: 50px;
+    }
+    .pros {
+      padding-top: 30px;
+    }
+  }
 }

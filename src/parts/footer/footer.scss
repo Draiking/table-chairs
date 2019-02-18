@@ -1,4 +1,4 @@
-footer {
+.footer {
   background-color: $black-footer;
   min-height: 380px;
   color: $white-10;
@@ -50,5 +50,34 @@ footer {
       margin: 0 5px;
     }
   }
-
+}
+@media only screen and (max-width : 992px) {
+  .footer {
+    h4 {
+      font-size: 20px;
+    }
+    .icon-map {
+      padding-top: 10px;
+    }
+    .pl50 {
+      padding: 0;
+      padding-left: 30px;
+      h4{
+        padding-bottom: 2px;
+      }
+      p {
+        padding-top: 2px;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 767px) {
+  .footer {
+    h4 {
+      padding-top: 15px;
+    }
+    .social-footer {
+      padding-top: 10px;
+    }
+  }
 }

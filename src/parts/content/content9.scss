@@ -23,3 +23,29 @@
     color: $gray-40;
   }
 }
+@media only screen and (max-width : 1200px) {
+  .section-9{
+    .info {
+      h4 {
+        padding-top: 10px;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 767px) {
+  .section-9 {
+    .container {
+      margin: 0;
+    }
+  }
+}
+@media only screen and (max-width : 576px) {
+  .section-9 {
+    .posa {
+      padding: 0;
+    }
+    .choice {
+      width: 132px;
+    }
+  }
+}

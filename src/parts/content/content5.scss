@@ -6,7 +6,7 @@
     display: block;
     position: absolute;
     top: -10px;
-    right: 15px;
+    right: 25px;
     width: 100%;
     height: 562px;
     z-index: 1000;
@@ -50,8 +50,8 @@
   }
 
  .forms {
-   width: 305px;
-   height: 534px;
+   width: 100%;
+   height: 100%;
    text-align: center;
    background-color: $white;
    border: 2px solid $accent-yellow;
@@ -75,6 +75,32 @@
   .button {
     color: $brown;
   }
-
-
+}
+@media only screen and (max-width : 1200px) {
+.section-5 {
+  .border {
+    display: none;
+  }
+}
+}
+@media only screen and (max-width : 992px) {
+  .section-5 {
+    .individual-text {
+      text-align: center;
+    }
+    .mt0 {
+      margin-top: 30px;
+    }
+  }
+}
+@media only screen and (max-width : 575px) {
+  .section-5 {
+    .m-card{
+      margin-top: 30px;
+    }
+    .p-card {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
 }
