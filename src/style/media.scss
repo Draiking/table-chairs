@@ -16,11 +16,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
-  .home {
-    .adventure-img{
-      display: none;
-    }
-  }
+
 }
 	
 	/*Disable Animation on Mobile Devices*/
@@ -50,11 +46,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-  .home {
-    .order-first {
-      order: 1;
-    }
-  }
+
 }
 	/**/
 
@@ -65,6 +57,12 @@
 
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {}
+@media only screen and (min-width : 1200px) {
+  .main-head {
+    .toggle-menu {
+      display: none;
+    }
+  }
+}
 	/**/
 

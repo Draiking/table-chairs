@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+    $(".toggle-menu").click(function () {
+        $(this).toggleClass("on");
+        $(".main-menu").toggleClass('d-block');
+    });
+
+
 
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
