@@ -79,15 +79,13 @@
   .section-1 {
     .individ-text {
       padding: 45px 20px;
+      .button {
+        top: 52px;
+      }
     }
-
-    .button {
-      top: 52px;
-    }
-
   }
 }
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 991px) {
   .section-1 {
     .individ-text {
       padding: 10px 20px;
@@ -98,11 +96,49 @@
     img {
       margin: 0;
     }
+    .button {
+      top: 61px;
+      font-size: 12px;
+    }
   }
 }
 
+@media only screen and (max-width : 767px) {
+  .section-1 {
+    .individ-text {
+      .btn {
+        white-space: normal;
+      }
+    }
+  }
+}
 
+@media only screen and (max-width : 575px) {
+  .section-1 {
+    .card-list {
+      padding: 30px 30px;
+    }
 
+    .individual {
+      .border {
+        display: none;
+      }
+    }
+
+    .individual {
+      .pr0 {
+        padding: 0;
+      }
+      .pl0 {
+        padding: 0 15px;
+      }
+      .button {
+        top: 10px;
+      }
+    }
+
+  }
+}
 
 @import "content2";
 @import "content3";
