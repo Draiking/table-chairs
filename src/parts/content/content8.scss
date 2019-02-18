@@ -1,0 +1,24 @@
+.section-8 {
+
+
+  .top-text {
+    font-family: 'OpenSansItalic-700', sans-serif;
+  }
+
+  .work-button {
+    a{
+      border-radius: 0;
+      color: $accent-yellow;
+      font-family: "OpenSansLatina-600", sans-serif;
+      font-weight: bold;
+    }
+  }
+
+  .work-img {
+    img {
+      border: 2px solid $accent-yellow;
+    }
+  }
+
+
+}

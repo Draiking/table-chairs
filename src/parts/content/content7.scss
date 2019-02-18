@@ -1,0 +1,42 @@
+.section-7 {
+  background-color: $gray-30;
+
+  iframe {
+    box-shadow: 8px 8px rgba(47,47,47,.3);
+  }
+
+  .production-text {
+    h4{
+      font-family: 'OpenSansItalic-700', sans-serif;
+    }
+  }
+
+  .production-img {
+    position: relative;
+    display: inline-block;
+    .img {
+      width: 92px;
+      height: 68px;
+      background-repeat: no-repeat;
+      border: 2px solid $accent-yellow;
+    }
+  }
+
+  .certificate-text {
+    h4{
+      font-family: 'OpenSansItalic-700', sans-serif;
+    }
+  }
+
+  .certificate-img {
+    position: relative;
+    display: inline-block;
+    .img {
+      width: 100px;
+      height: 146px;
+      border: 2px solid $accent-yellow;
+    }
+  }
+
+
+}
