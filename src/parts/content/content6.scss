@@ -34,11 +34,32 @@
     color: $accent-yellow;
     border: 2px solid $accent-yellow;
     border-radius: 0;
+    transition: all .5s ease;
+    &:active {
+      color: $white!important;
+      background-color: $cyan!important;
+      border: 1px solid $darkgoldenrod!important;
+      transition: all .5s ease;
+    }
+    &:focus {
+      color: $accent-yellow!important;
+      text-decoration: none!important;
+      transition: all .5s ease;
+    }
+    &:hover {
+      transition: all .5s ease;
+      color: $accent-yellow!important;
+      background-color: $black!important;
+      border: 1px solid $darkgoldenrod!important;
+    }
   }
 
   .youtube-feedback {
     height: 148px;
     width: 160px;
+    p {
+      font-family: 'Open Sans Light', arial;
+    }
     .icon {
       left: 50%;
       position: relative;
