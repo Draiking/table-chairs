@@ -49,6 +49,7 @@
   .catalog {
     text-align: center;
     .button {
+      border-radius: 0;
       font-weight: bold;
       color: $brown;
       box-shadow: 8px 8px rgba(47,47,47,.3);
