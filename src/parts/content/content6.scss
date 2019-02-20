@@ -2,10 +2,16 @@
   min-height: 364px;
 
   iframe {
-      box-shadow: 8px 8px rgba(47,47,47,.3);
+    box-shadow: 8px 8px rgba(47,47,47,.3);
+    width: 100%;
   }
 
   .feedback-custom {
+    display: flex;
+    width: 100%;
+  }
+
+  .mx0 {
     h3{
       font-family: 'OpenSansItalic-700', sans-serif;
     }
@@ -14,14 +20,15 @@
   .part {
     display: inline-block;
     background-repeat: no-repeat;
-    height: 118px;
-    width: 161px;
+    height: 148px;
+    width: 25%;
     position: relative;
+    flex-grow: 1;
   }
 
   .border {
     border: 1px solid $accent-yellow;
-    height: 118px;
+    height: 148px;
     bottom: 10px;
     position: absolute;
     right: 5px;
@@ -75,39 +82,64 @@
 @media only screen and (max-width : 1200px) {
   .section-6 {
     .youtube-feedback {
-      img {
-        display: none;
+      .arrow {
+        right: 15px;
       }
     }
   }
 }
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 991px) {
   .section-6 {
     .feedback-custom {
-      padding-left: 100px;
+      margin-bottom: 40px;
       h3 {
         padding-top: 30px;
         padding-bottom: 10px;
       }
-    }
-    .youtube-feedback {
-      display: none;
-    }
-    .all-feedback {
-      display: inline-block;
-      left: 50%;
-      position: relative;
-      transform: translateY(-50%);
     }
   }
 }
 @media only screen and (max-width : 767px) {
   .section-6 {
     iframe {
-      width: 400px;
+      width: 100%;
     }
     .feedback-custom {
       padding-left: 0;
+      flex-wrap: wrap;
+    }
+    .part {
+      width: 45%;
+      margin-right: 2.5%;
+      margin-left: 2.5%;
+      margin-bottom: 15px;
+    }
+    .d-flex {
+      padding: 0 15px;
+    }
+    .youtube-feedback {
+      .arrow {
+        right: 45px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .section-6 {
+    iframe {
+      width: 60%;
+      left: 50%;
+      position: relative;
+      transform: translateX(-50%);
+    }
+    .feedback-custom {
+      text-align: center;
+    }
+    .youtube-feedback {
+      .icon {
+        left: 0;
+        transform: none;
+      }
     }
   }
 }
@@ -115,6 +147,23 @@
   .section-6 {
     iframe {
       width: 290px;
+    }
+
+    .d-flex {
+      padding-bottom: 30px;
+      h3 {
+        padding-bottom: 15px;
+      }
+    }
+
+    .youtube-feedback {
+      .arrow {
+        right: 12px;
+      }
+    }
+
+    .all-feedback {
+      padding-bottom: 15px;
     }
   }
 }

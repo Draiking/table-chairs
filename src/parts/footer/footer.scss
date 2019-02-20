@@ -14,37 +14,58 @@
     top: 8px
   }
 
-  .footer-menu{
+  .footer-menu {
     ul {
       display: inline-block;
       list-style-type: none;
-    }
-    li {
-      padding-top: 10px;
+      li {
+        padding-top: 10px;
+        a {
+          font-size: 14px;
+          color: $white-10;
+        }
+        &.active, &:hover {
+          a {
+            border-bottom: none!important;
+            color: $accent-yellow;
+            border-bottom: 1px solid $gray;
+            transition: all .7s ease;
+          }
+        }
       }
-    a {
-      font-size: 14px;
-      color: $white-10;
     }
   }
 
-  .footer-catalog{
+  .footer-catalog {
     ul {
       display: inline-block;
       list-style-type: none;
-    }
-    li {
-      padding-top: 10px;
-    }
-    a {
-      font-size: 14px;
-      color: $white-10;
+      li {
+        padding-top: 10px;
+        a {
+          font-size: 14px;
+          color: $white-10;
+          transition: all .7s ease;
+        }
+        &.active, &:hover {
+          a {
+            border: none!important;
+            color: $accent-yellow;
+            border-bottom: 1px solid $gray;
+            transition: all .7s ease;
+          }
+        }
+      }
     }
   }
 
   .social-footer {
     .fab {
       color: $white;
+      &:hover {
+        color: $accent-yellow;
+        transition: all .3s ease;
+      }
     }
     .social-icon {
       margin: 0 5px;
@@ -80,4 +101,12 @@
       padding-top: 10px;
     }
   }
+
+  .pl50 {
+    text-align: center;
+    p {
+      padding-right: 0;
+    }
+  }
+
 }

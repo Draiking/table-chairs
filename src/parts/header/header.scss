@@ -17,6 +17,7 @@
       color: $white;
       margin: 0 2px;
       &:hover {
+        transition: all .3s ease;
         color: $accent-yellow;
       }
     }
