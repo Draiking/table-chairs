@@ -1,0 +1,51 @@
+.section-9 {
+  min-height: 293px;
+
+
+  .ymaps-2-1-72-controls__control_toolbar {
+    display: none;
+  }
+
+  .info {
+    z-index: 1000;
+    color: $white;
+    h4{
+      font-family: "OpenSansItalic-600", sans-serif;
+    }
+  }
+
+  .choice {
+    width: 221px;
+    border: 2px solid $accent-yellow;
+  }
+
+  .info-text {
+    color: $gray-40;
+  }
+}
+@media only screen and (max-width : 1200px) {
+  .section-9{
+    .info {
+      h4 {
+        padding-top: 10px;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 767px) {
+  .section-9 {
+    .container {
+      margin: 0;
+    }
+  }
+}
+@media only screen and (max-width : 575px) {
+  .section-9 {
+    .posa {
+      padding: 10px;
+    }
+    .choice {
+      width: 132px;
+    }
+  }
+}

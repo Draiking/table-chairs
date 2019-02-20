@@ -13,20 +13,19 @@
     font-size: 18px;
     font-weight: bold;
     position: relative;
-    left: 106px;
     .fab {
       color: $white;
-      margin: 0 5px;
+      margin: 0 2px;
       &:hover {
         color: $accent-yellow;
       }
     }
-
   }
 
   .phone {
     position: relative;
-    left: 120px;
+    bottom: 10px;
+    left: 3px;
     p {
       font-size: 16px;
     }
@@ -37,19 +36,20 @@
 
   .main-search {
     position: relative;
-    top: 10px;
+    top: 14px;
   }
 
 
   .logo{
     img{
       position: relative;
-      left: 107px;
     }
   }
 
   .search {
     position: relative;
+    top: 7px;
+    right: 22px;
     .icon {
       position: absolute;
     }
@@ -59,37 +59,51 @@
       border-top: none;
       border-right: none;
       border-left: none;
-      width: 700px;
-    }
-      &:hover, &:focus {
-      .icon {
-        display: none;
-      }
+      width: 517px;
     }
   }
 
   .main-button {
     position: relative;
-    left: 100px;
     top: 5px;
+    right: 8px;
+    display: flex;
     .button {
+      font-family: 'OpenSansLatin-300',sans-serif;
+      font-zise: 14px;
       background: transparent;
-      border: 1px solid $aque-100;
+      border: 2px solid $aque-100;
       padding: 8px 14px;
+      transition: all 0.5s ease;
+      &:active {
+        color: $white;
+        background-color: $black;
+        border: 2px solid $darkgoldenrod;
+      }
+      &:focus {
+        color: $accent-yellow;
+        text-decoration: none;
+      }
+      &:hover {
+        color: $accent-yellow;
+        background-color: $black;
+        border: 2px solid $darkgoldenrod;
+      }
     }
     img {
-      margin: 0 10px;
+      position: relative;
+      margin: 0 15px;
       width: 30px;
+      top: 2px;
+      height: 36px;
     }
   }
 
   .main-menu {
     position: relative;
     top: 8px;
-    font-style: italic;
-    left: 50px;
+    font-family: 'OpenSansItalic-300',sans-serif;
     ul {
-      padding: 4px;
       li {
         list-style-type: none;
         display: inline-block;
@@ -97,18 +111,341 @@
         a {
           color: $white;
           text-decoration: none;
+          transition: all .7s ease;
         }
         &.active, &:hover {
           a {
             color: $accent-yellow;
             border-bottom: 1px solid $gray;
+            transition: all .7s ease;
           }
         }
       }
     }
   }
 
+ .carousel-item {
+   height: 310px;
+   .btn {
+     width: 225px;
+     font-size: 14px;
+   }
+ }
 
+  .range {
+    font-family: 'OpenSansLatin-800', sans-serif;
+    font-weight: bold;
+    width: auto!important;
+    color: $brown;
+    &:active {
+      color: $white!important;
+      background-color: $cyan!important;
+      border: 1px solid $darkgoldenrod!important;
+    }
+    &:focus {
+      color: $accent-yellow!important;
+      text-decoration: none!important;
+    }
+    &:hover {
+      color: $accent-yellow!important;
+      background-color: $black!important;
+      border: 1px solid $darkgoldenrod!important;
+    }
+  }
 
+  .range-two {
+    &:active {
+      color: $white!important;
+      background-color: $cyan!important;
+      border: 1px solid $darkgoldenrod!important;
+    }
+    &:focus {
+      color: $accent-yellow!important;
+      text-decoration: none!important;
+    }
+    &:hover {
+      color: $accent-yellow!important;
+      background-color: $black!important;
+      border: 1px solid $darkgoldenrod!important;
+    }
+  }
+
+  .toggle-menu {
+    display: block;
+    float: left;
+    position: relative;
+    right: 0;
+    top: 0;
+    text-align: center;
+    line-height: 48px;
+    width: 28px;
+    height: 28px;
+    padding-top: 20px;
+    margin: 30px;
+    margin-bottom: 100px;
+    z-index: 1050;
+    span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: $white;
+      transition: all 0.3s;
+      backface-visibility: hidden;
+      border-radius: 2px;
+      &:after {
+        top: 9px;
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $white;
+        transition: all 0.3s;
+        backface-visibility: hidden;
+        border-radius: 2px;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -9px;
+        width: 100%;
+        height: 3px;
+        background-color: $white;
+        transition: all 0.3s;
+        backface-visibility: hidden;
+        border-radius: 2px;
+      }
+    }
+    &.on {
+      span {
+        background-color: transparent;
+        &:before {
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+        &:after {
+          transform: rotate(-45deg) translate(7px, -8px);
+        }
+      }
+    }
+  }
 
 }
+@media only screen and (max-width : 1200px) {
+  .main-head {
+    .search {
+      #search {
+        width: 430px;
+      }
+    }
+
+    .button {
+      font-size: 11px;
+    }
+
+    .toggle-menu {
+      display: none;
+    }
+
+
+
+
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .main-head {
+    .phone {
+      bottom: 0;
+      span{
+        font-size: 21px;
+      }
+    }
+
+    .logo {
+      img {
+        width: 100%;
+      }
+    }
+
+    .search {
+      top: 0;
+      right: 0;
+      padding-left: 10px;
+      #search {
+        width: 300px;
+      }
+    }
+
+    .main-button {
+      img {
+        display: none;
+      }
+    }
+
+    .carousel-item {
+      .d-flex {
+        padding: 35px;
+        padding-top: 30px;
+      }
+      h3 {
+        font-size: 28px!important;
+        padding: 5px;
+      }
+      .w-100 {
+        margin-top: 5px;
+        .button{
+          margin: 5px;
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .main-head {
+    .social {
+      margin-left: 5px;
+    }
+
+    .search {
+      padding-left: 10px;
+      #search {
+        width: 240px;
+      }
+    }
+
+    .main-button {
+      top: 0;
+      right: 0;
+    }
+
+    .toggle-menu {
+      display: block;
+    }
+
+    .head-menu {
+      .main-menu {
+        display: none;
+        min-width: 295px;
+        float: right;
+        text-align: right;
+        background-color: #1c242c;
+        border-bottom: $violet 4px solid;
+        border-top: $navy-blue 4px solid;
+        position: absolute;
+        top: 38px;
+        right: 15px;
+        z-index: 1000;
+        ul {
+          padding: 0;
+        }
+        li {
+          display: block;
+          line-height: 0;
+          padding: 0;
+        }
+        a {
+          display: block;
+          line-height: 48px;
+          padding: 0 20px;
+          background-color: #394b5f;
+          font-size: 18px;
+          transition: all .7s ease;
+          &:hover {
+            background-color: #1b2637;
+            transition: all .7s ease;
+          }
+        }
+      }
+    }
+
+
+
+  }
+}
+@media only screen and (max-width : 580px) {
+  .main-head {
+    .phone {
+      text-align: right;
+    }
+
+    .logo {
+      margin-left: 5px;
+    }
+
+    .search {
+      margin-left: 30px;
+    }
+
+    .main-button {
+      display: none;
+    }
+
+    .main-menu{
+      margin-left: 5px;
+      ul{
+        font-size: 16px;
+      }
+    }
+
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .main-head {
+    .phone {
+      span {
+        font-size: 17px;
+      }
+    }
+
+    .search {
+      #search {
+        width: 180px;
+      }
+    }
+
+    .carousel-control-prev-icon {
+      position: relative;
+      top: 75px;
+    }
+    .carousel-control-next-icon {
+      position: relative;
+      top: 75px;
+    }
+
+    .carousel-item {
+      .d-flex {
+        padding: 0;
+      }
+      h3 {
+        font-size: 28px!important;
+        padding: 5px;
+      }
+      .w-100 {
+        margin-top: 5px;
+        .button{
+          margin: 5px;
+        }
+      }
+    }
+
+    .carousel-item {
+      h3 {
+        font-size: 27px;
+      }
+    }
+
+    .range {
+      white-space: normal;
+    }
+  }
+}
+
+
+
+
+@import "../../style/media";

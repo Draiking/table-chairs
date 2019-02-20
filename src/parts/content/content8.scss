@@ -1,0 +1,39 @@
+.section-8 {
+  .top-text {
+    font-family: 'OpenSansItalic-700', sans-serif;
+  }
+
+  .work-button {
+    a{
+      border-radius: 0;
+      color: $accent-yellow;
+      font-family: "OpenSansLatina-600", sans-serif;
+      font-weight: bold;
+    }
+  }
+
+  .work-img {
+    img {
+      border: 2px solid $accent-yellow;
+    }
+  }
+}
+@media only screen and (max-width : 1200px) {
+  .section-8 {
+    .work-img {
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 992px) {
+  .section-8 {
+    .work-img {
+      .pt0{
+        padding-top: 10px;
+      }
+    }
+  }
+}
