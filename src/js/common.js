@@ -7,6 +7,7 @@ $(document).ready(function() {
 
 
 
+
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
                 center: [56.2218, 43.4802],
