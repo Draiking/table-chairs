@@ -10,6 +10,11 @@
       color: $accent-yellow;
       font-family: "OpenSansLatina-600", sans-serif;
       font-weight: bold;
+      &:hover {
+        color: $accent-yellow!important;
+        background-color: $black!important;
+        border: 2px solid $darkgoldenrod!important;
+      }
     }
   }
 

@@ -129,4 +129,21 @@
   url('../fonts/open-sans-v15-cyrillic_latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
   url('../fonts/open-sans-v15-cyrillic_latin-800.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
-/* Open-sans-light */
+@font-face {
+  font-family: 'Georgia Regular';
+  src: url('../fonts/Georgia.eot');
+  src: url('../fonts/Georgia.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Georgia.woff') format('woff'),
+  url('../fonts/Georgia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Georgia Bold';
+  src: url('../fonts/Georgia-Bold.eot');
+  src: url('../fonts/Georgia-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Georgia-Bold.woff') format('woff'),
+  url('../fonts/Georgia-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
