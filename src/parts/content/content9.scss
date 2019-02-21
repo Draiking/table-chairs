@@ -10,8 +10,14 @@
     z-index: 1000;
     color: $white;
     h4{
-      font-family: "OpenSansItalic-600", sans-serif;
+      font-family: "Georgia Bold Italic", sans-serif;
+      font-size: 22px;
     }
+  }
+
+  .adress {
+    font-family: 'OpenSansLatin-800', sans-serif;
+    font-size: 16px;
   }
 
   .choice {
@@ -20,6 +26,8 @@
   }
 
   .info-text {
+    font-family: "Open Sans Light",sans-serif;
+    font-size: 14px;
     color: $gray-40;
   }
 }
