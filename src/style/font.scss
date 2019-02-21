@@ -147,3 +147,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Georgia Bold Italic';
+  src: url('../fonts/Georgia-BoldItalic.eot');
+  src: local('../fonts/Georgia Bold Italic'), local('Georgia-BoldItalic'),
+  url('../fonts/Georgia-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Georgia-BoldItalic.woff') format('woff'),
+  url('../fonts/Georgia-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}

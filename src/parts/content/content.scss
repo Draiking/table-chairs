@@ -1,11 +1,11 @@
 .section-1 {
   background-color: $orange-900;
+  font-family: "Georgia Bold Italic",sans-serif;
 
 
   .card {
     position: relative;
     height: 330px;
-    font-family: 'OpenSansItalic-600', sans-serif;
     border: none;
     border-radius: 0;
   }
@@ -62,15 +62,15 @@
   }
 
   .individ-text {
-    h3{
-      font-family: 'OpenSansItalic-600', sans-serif;
-      font-weight: bold;
+    p{
+      font-family: "Open Sans Light",sans-serif;
     }
     .button {
+      font-family: "Open Sans Light",sans-serif;
       border-radius: 0;
       position: relative;
       z-index: 1010;
-      top: 42px;
+      top: 54px;
       box-shadow: 8px 8px rgba(47,47,47,.3);
     }
   }
@@ -81,7 +81,7 @@
     .individ-text {
       padding: 45px 20px;
       .button {
-        top: 52px;
+        top: 64px;
       }
     }
   }
@@ -92,15 +92,22 @@
       padding: 10px 20px;
     }
     h3 {
+      padding-top: 10px;
       font-size: 20px;
+    }
+    p {
+      padding-top: 30px;
     }
     img {
       margin: 0;
     }
     .button {
-      top: 61px;
+      top: 68px;
       font-size: 12px;
     }
+  }
+  .card-title {
+    font-size: 22px!important;
   }
 }
 
@@ -109,10 +116,19 @@
     .individ-text {
       .btn {
         white-space: normal;
+        top: 32px;
       }
     }
     .card-title {
         font-size: 18px;
+    }
+    .card-body {
+      padding-left: 17px;
+    }
+    .individual {
+      .border {
+        left: 17px;
+      }
     }
   }
 }
@@ -127,6 +143,10 @@
       .border {
         display: none;
       }
+    }
+
+    .card-body {
+      padding-left: 65px;
     }
 
     .card-title {
@@ -146,6 +166,12 @@
       }
     }
 
+  }
+}
+@media only screen and (max-width : 480px) {
+  .section-1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 

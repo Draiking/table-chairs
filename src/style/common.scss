@@ -24,7 +24,6 @@ body {
   font-size: 15px;
   padding: 12px 12px;
   transition: background-color .25s ease;
-  font-family: "RalewayRegular", sans-serif;
   &:hover {
     text-decoration: none;
     background-color: lighten($accent-yellow, 12%);
@@ -62,7 +61,6 @@ body {
 }
 
 stong, b {
-  font-family: "RalewayRegular", sans-serif;
   font-weight: normal;
 }
 
@@ -80,8 +78,3 @@ stong, b {
 .f-gr-1 {
   flex-grow: 1;
 }
-
-h1 , h2 , h3 , h4 , h5 , h6, .button {
-  font-weight: normal;
-}
-
