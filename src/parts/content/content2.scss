@@ -76,6 +76,7 @@
     }
     .button {
       margin-top: 10px;
+      margin-left: 0!important;
     }
   }
 }
@@ -120,6 +121,13 @@
   .section-2 {
     .button {
       margin-left: 30px!important;
+    }
+  }
+}
+@media only screen and (max-width : 356px) {
+  .section-2 {
+    .button {
+      margin-left: 0!important;
     }
   }
 }
