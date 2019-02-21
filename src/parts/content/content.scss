@@ -165,7 +165,12 @@
         top: 10px;
       }
     }
-
+    .price-img-1 {
+      display: none;
+    }
+    .price-img-2 {
+      display: block!important;
+    }
   }
 }
 @media only screen and (max-width : 480px) {

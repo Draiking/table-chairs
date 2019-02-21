@@ -12,7 +12,7 @@
   }
 
   .individual-text {
-    font-family: "OpenSansItalic-600", sans-serif;
+    font-family: "Georgia Bold Italic",sans-serif;
     color: $white;
   }
 
@@ -23,11 +23,11 @@
   }
 
   .card-title {
-    font-family: 'OpenSansItalic-700', sans-serif;
+    font-family: "Georgia Bold Italic",sans-serif;
   }
 
   .card-body {
-    font-family: "OpenSansLatin-300", sans-serif;
+    font-family: "Open Sans Light",sans-serif;
     p{
       color: $gray-20;
     }
@@ -36,7 +36,10 @@
   .price {
     span {
       color: $brown;
-      font-weight: bold;
+      font-family: 'GeorgiaRegular',sans-serif;
+    }
+    p{
+      font-family: "Open Sans Light",sans-serif;
     }
   }
 
@@ -45,7 +48,9 @@
   }
 
   .discount {
+    font-family: 'GeorgiaRegular',sans-serif;
     position: absolute;
+    text-align: center;
     right: 20px;
     top: 190px;
   }
@@ -58,12 +63,12 @@
    background-color: $white;
    border: 2px solid $accent-yellow;
     h1 {
-      font-family: 'OpenSansItalic-600',sans-serif;
+      font-family: "Georgia Bold Italic",sans-serif;
       font-weight: bold;
       white-space: nowrap;
     }
    p{
-     font-family: 'OpenSansLatin-300',sans-serif;
+     font-family: "Open Sans Light",sans-serif;
    }
     input {
       border: 2px solid $accent-yellow;
@@ -76,6 +81,7 @@
   }
 
   .button {
+    font-family: "Open Sans ExtraBold",sans-serif;
     color: $brown;
     font-weight: bold;
   }
@@ -90,12 +96,20 @@
       white-space: normal;
     }
   }
+  .button {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
 }
 @media only screen and (max-width : 992px) {
   .section-5 {
     .individual-text {
       text-align: center;
+    }
+    .button {
+      padding-left: 57px;
+      padding-right: 57px;
     }
   }
 }
@@ -113,6 +127,15 @@
         white-space: normal;
       }
     }
+    .button {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .stars {
+      img {
+        padding-left: 40px;
+      }
+    }
   }
 }
 @media only screen and (max-width : 575px) {
@@ -123,6 +146,11 @@
     .p-card {
       padding-left: 30px;
       padding-right: 30px;
+    }
+    .stars {
+      img {
+        padding-left: 60px;
+      }
     }
   }
 }
