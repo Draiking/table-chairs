@@ -40,6 +40,7 @@
     border: 2px solid $accent-yellow;
     border-radius: 0;
     transition: all .5s ease;
+    padding: 8px 34px;
     &:active {
       color: $white!important;
       background-color: $cyan!important;
@@ -86,6 +87,13 @@
     }
   }
 }
+@media only screen and (max-width : 1200px) {
+  .section-6 {
+    .button {
+      padding: 8px 18px;
+    }
+  }
+}
 @media only screen and (max-width : 991px) {
   .section-6 {
     .feedback-custom {
@@ -94,6 +102,9 @@
         padding-top: 30px;
         padding-bottom: 10px;
       }
+    }
+    .button {
+      padding: 8px 28px;
     }
   }
 }
@@ -119,6 +130,14 @@
       .arrow {
         right: 45px;
       }
+    }
+    .f-gr-1 {
+      text-align: center;
+    }
+    .all-feedback {
+      left: 50%;
+      position: relative;
+      transform: translateX(-50%);
     }
   }
 }
