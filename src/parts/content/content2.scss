@@ -1,14 +1,19 @@
 .section-2 {
   .text {
     h4{
-      font-family: 'OpenSansItalic-700',sans-serif;
+      font-family: "Georgia Bold Italic",sans-serif;
+    }
+    p{
+      font-family: "Open Sans Light",sans-serif;
     }
     .price {
       color: $brown;
+      font-size: 36px;
+      font-family: "GeorgiaItalic",sans-serif;
     }
     .btn {
       border-radius: 0;
-      font-family: 'OpenSansLatin-600',sans-serif;
+      font-family: 'Open Sans ExtraBold',sans-serif;
       color: $brown;
       box-shadow: 8px 8px rgba(47,47,47,.3);
     }
@@ -47,16 +52,18 @@
         font-size: 18px;
       }
     }
+    .price {
+      font-size: 25px!important;
+    }
   }
 }
 @media only screen and (max-width : 768px) {
   .section-2{
     .text {
       padding-top: 10px;
-    }
-    img {
-      padding-top: 3px;
-      padding-bottom: 3px;
+      img {
+        display: none;
+      }
     }
     p {
       font-size: 13px;
@@ -64,14 +71,18 @@
     h4{
       font-size: 15px;
     }
+    .pr300 {
+      margin-bottom: 5px;
+    }
+    .button {
+      margin-top: 10px;
+    }
   }
 }
-@media only screen and (max-width : 685px) {
+@media only screen and (max-width : 600px) {
   .section-2 {
-    .text {
-      img {
-        display: none;
-      }
+    .price {
+      font-size: 20px!important;
     }
   }
 }
@@ -84,15 +95,32 @@
         display: block;
       }
     }
+    .button {
+      margin-top: 0!important;
+    }
   }
 }
-
+@media only screen and (max-width : 575px) {
+  .section-2 {
+    .button {
+      margin-left: 50px!important;
+    }
+  }
+}
 @media only screen and (max-width : 480px) {
   .section-2 {
+    max-height: 600px;
     .text {
       .button {
         margin-top: 10px;
       }
+    }
+  }
+}
+@media only screen and (max-width : 356px) {
+  .section-2 {
+    .button {
+      margin-left: 30px!important;
     }
   }
 }
