@@ -11,11 +11,9 @@
     width: 100%;
   }
 
-  .mx0 {
-    h3{
-      font-family: 'OpenSansItalic-700', sans-serif;
+  .h3{
+      font-family: "Georgia Bold Italic",sans-serif;
     }
-  }
 
   .part {
     display: inline-block;
@@ -36,7 +34,7 @@
   }
 
   .button {
-    font-family: 'OpenSansLatin-800', sans-serif;
+    font-family: "Open Sans ExtraBold",sans-serif;
     background-color: $white;
     color: $accent-yellow;
     border: 2px solid $accent-yellow;
@@ -45,7 +43,7 @@
     &:active {
       color: $white!important;
       background-color: $cyan!important;
-      border: 1px solid $darkgoldenrod!important;
+      border: 2px solid $darkgoldenrod!important;
       transition: all .5s ease;
     }
     &:focus {
@@ -57,7 +55,7 @@
       transition: all .5s ease;
       color: $accent-yellow!important;
       background-color: $black!important;
-      border: 1px solid $darkgoldenrod!important;
+      border: 2px solid $darkgoldenrod!important;
     }
   }
 
