@@ -1,8 +1,11 @@
 .section-3 {
   background-color: $white-1000;
+  font-family: "Open Sans Light",sans-serif;
 
   .popular-text {
-    font-family: "OpenSansItalic-600", sans-serif;
+    font-family: "Georgia Bold Italic",sans-serif;
+    font-size: 26px;
+    color: $black-footer;
   }
 
   .card {
@@ -10,11 +13,12 @@
   }
 
   .card-title {
-    font-family: 'OpenSansItalic-700', sans-serif;
+    font-family: "Georgia Bold Italic",sans-serif;
+    font-size: 16px;
   }
 
   .card-body {
-    font-family: "OpenSansLatin-300", sans-serif;
+    font-family: "Open Sans Light",sans-serif;
     p{
       color: $gray-20;
     }
@@ -23,7 +27,7 @@
   .price {
     span {
       color: $brown;
-      font-weight: bold;
+      font-family: 'Georgia',sans-serif;
     }
   }
 
