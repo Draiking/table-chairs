@@ -1,6 +1,7 @@
 .section-8 {
   .top-text {
-    font-family: 'OpenSansItalic-700', sans-serif;
+    font-family: "Georgia Bold Italic", sans-serif;
+    font-size: 26px;
   }
 
   .work-button {
@@ -8,8 +9,8 @@
       display: inline-block;
       border-radius: 0;
       color: $accent-yellow;
-      font-family: "OpenSansLatina-600", sans-serif;
-      font-weight: bold;
+      font-family: "Open Sans ExtraBold", sans-serif;
+      white-space: nowrap;
       &:hover {
         color: $accent-yellow!important;
         background-color: $black!important;
@@ -41,6 +42,13 @@
         width: 100%;
       }
     }
+    .wrap {
+      padding: 0;
+    }
+    .work-button {
+      position: relative;
+      right: 17px;
+    }
   }
 }
 @media only screen and (max-width : 992px) {
@@ -49,6 +57,27 @@
       .pt0{
         padding-top: 10px;
       }
+    }
+    .wrap {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .work-button {
+      right: 0;
+    }
+    .img-pt {
+      padding-top: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .section-8 {
+    .top-linear {
+      text-align: center;
+    }
+    .px {
+      padding-right: 5px;
+      padding-left: 5px;
     }
   }
 }
