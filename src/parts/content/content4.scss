@@ -9,18 +9,32 @@
 
   .info {
     h4{
-      font-family: 'OpenSansLatin-600',sans-serif;
+      font-family: 'PlayfairDisplayBold', sans-serif;
+      font-size: 31px!important;
     }
     p {
-      font-family: 'OpenSansLatin-300',sans-serif;
+      font-family: "Open Sans Light",sans-serif;
+      font-size: 24px;
       padding: 0 150px;
     }
   }
 }
+@media only screen and (max-width : 992px) {
+  .section-4 {
+    .creat-img {
+      padding-top: 90px;
+    }
+  }
+}
+
 @media only screen and (max-width : 767px) {
   .section-4 {
     .info {
+      h4 {
+        font-size: 24px!important;
+      }
       p {
+        font-size: 16px!important;
         padding: 0;
       }
     }
@@ -43,9 +57,6 @@
 }
 @media only screen and (max-width : 407px) {
   .section-4 {
-    .creat-img {
-      padding-top: 50px;
-    }
     .creat {
       padding-top: 10px;
     }
