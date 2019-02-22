@@ -203,7 +203,7 @@
     padding-top: 20px;
     margin: 30px;
     margin-bottom: 100px;
-    z-index: 1050;
+    z-index: 10;
     span {
       position: relative;
       display: block;
@@ -250,7 +250,19 @@
       }
     }
   }
-
+  .icon-modal {
+    .icon {
+      z-index: 1000;
+      position: relative;
+    }
+    .modal-dialog{
+      margin: 0;
+    }
+    .modal-content {
+      width: 100vw;
+      height: 100vh;
+    }
+  }
 }
 @media only screen and (max-width : 1200px) {
   .main-head {
@@ -258,6 +270,14 @@
       #search {
         width: 430px;
       }
+    }
+
+    .icon-phone {
+      display: none;
+    }
+
+    .search-icon {
+      display: none;
     }
 
     .button {
@@ -268,9 +288,12 @@
       display: none;
     }
 
-
-
-
+    .search-modal {
+      display: none;
+    }
+    .icon-modal {
+      display: none;
+    }
   }
 }
 
@@ -410,7 +433,34 @@
         font-size: 16px;
       }
     }
-
+    .search {
+      display: none;
+    }
+    .icon-modal {
+      display: block;
+      text-align: right;
+      top: -20px;
+      position: absolute;
+      right: 0;
+      .icon{
+        background: transparent;
+        border: none;
+      }
+      .fas {
+        z-index: 1050;
+        color: $white;
+        &:hover {
+          color: $accent-yellow;
+        }
+      }
+      .fa {
+        color: $white;
+        z-index: 1050;
+        &:hover {
+          color: $accent-yellow;
+        }
+      }
+    }
   }
 }
 
@@ -471,6 +521,21 @@
     .range {
       white-space: normal;
     }
+    .icon-phone {
+      display: block!important;
+      color: $white;
+      background: transparent;
+      border: none;
+      position: absolute;
+      right: 0;
+      &:hover {
+        color: $accent-yellow;
+      }
+    }
+    .number-phone {
+      display: none;
+    }
+
   }
 }
 
