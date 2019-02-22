@@ -106,6 +106,9 @@
     .button {
       padding: 8px 28px;
     }
+    .pt88 {
+      padding-top: 28px;
+    }
   }
 }
 @media only screen and (max-width : 767px) {
@@ -133,6 +136,15 @@
     }
     .f-gr-1 {
       text-align: center;
+      padding-bottom: 40px;
+    }
+    .button {
+      padding: 8px 55px;
+    }
+    .all-feedback {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }

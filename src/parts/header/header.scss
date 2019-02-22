@@ -56,6 +56,7 @@
       position: absolute;
     }
     input {
+      padding-left: 20px;
       color: $white;
       background: transparent;
       border-top: none;
@@ -119,9 +120,12 @@
         &.active, &:hover {
           a {
             color: $accent-yellow;
-            border-bottom: 1px solid $gray;
             transition: all .7s ease;
           }
+        }
+        &:hover {
+          transition: all 0s ease;
+          border-bottom: 1px solid $gray;
         }
       }
     }
@@ -141,10 +145,11 @@
     width: auto!important;
     color: $brown;
     border-radius: 0;
+    border: 2px solid $accent-yellow;
     &:active {
       color: $white!important;
       background-color: $cyan!important;
-      border: 1px solid $darkgoldenrod!important;
+      border: 2px solid $darkgoldenrod!important;
     }
     &:focus {
       color: $white!important;
@@ -153,13 +158,14 @@
     &:hover {
       color: $accent-yellow!important;
       background-color: $black!important;
-      border: 2px solid $darkgoldenrod!important;
+      border: 2x solid $darkgoldenrod!important;
     }
   }
 
   .range-two {
     border-radius: 0;
     width: auto!important;
+    border: 2px solid $accent-yellow;
     &:active {
       color: $white!important;
       background-color: $cyan!important;

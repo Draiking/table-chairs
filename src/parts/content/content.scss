@@ -8,11 +8,18 @@
     height: 330px;
     border: none;
     border-radius: 0;
+    cursor: pointer;
+    &:hover {
+      .border-bottom {
+        width: 100%;
+        transition: all 0.7s ease;
+      }
+    }
   }
 
   .card-title {
+    display: inline-block;
     .border-bottom {
-      position: absolute;
       border-bottom: 2px solid $accent-yellow;
       height: 10px;
       width: 30px;
@@ -72,6 +79,10 @@
       z-index: 1010;
       top: 54px;
       box-shadow: 8px 8px rgba(47,47,47,.3);
+      &:active {
+        box-shadow: none!important;
+        transition: all .3s ease!important;
+      }
     }
   }
 
@@ -157,6 +168,7 @@
 
 
     .individual {
+      margin-top: 40px;
       .pr0 {
         padding: 0;
       }
@@ -178,7 +190,6 @@
 @media only screen and (max-width : 480px) {
   .section-1 {
     padding-top: 30px;
-    padding-bottom: 30px;
   }
 }
 

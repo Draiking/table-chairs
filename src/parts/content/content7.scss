@@ -1,5 +1,6 @@
 .section-7 {
   background-color: $gray-30;
+  padding-bottom: 30px;
 
   iframe {
     box-shadow: 8px 8px rgba(47,47,47,.3);
@@ -101,6 +102,9 @@
     }
     .pros {
       padding-top: 30px;
+    }
+    .you-video {
+      padding-bottom: 25px;
     }
   }
 }
