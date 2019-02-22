@@ -250,6 +250,21 @@
       }
     }
   }
+  .modal-header {
+    #search {
+      margin-left: 20px;
+      border: none;
+    }
+    .icon-modal {
+      position: absolute;
+      right: 5px;
+      top: 13px;
+      .fas {
+        color: $blue;
+
+      }
+    }
+  }
   .icon-modal {
     .icon {
       z-index: 1000;
@@ -261,6 +276,16 @@
     .modal-content {
       width: 100vw;
       height: 100vh;
+    }
+  }
+  .close-search {
+    position: absolute;
+    background: transparent;
+    border: none;
+    left: 0;
+    font-size: 30px;
+    span {
+      color: $gray-60;
     }
   }
 }
