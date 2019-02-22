@@ -108,3 +108,11 @@
     }
   }
 }
+@media only screen and (max-width: 576px) {
+  .section-7 {
+    .modal-img {
+      width: 300px!important;
+      height: 320px!important;
+    }
+  }
+}

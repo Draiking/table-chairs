@@ -148,6 +148,7 @@
 
 @media only screen and (max-width : 575px) {
   .section-1 {
+    padding-bottom: 0;
     .card-list {
       padding: 30px 30px;
     }
@@ -169,6 +170,7 @@
 
     .individual {
       margin-top: 40px;
+      margin-bottom: 0;
       .pr0 {
         padding: 0;
       }
@@ -176,7 +178,7 @@
         padding: 0 15px;
       }
       .button {
-        top: 10px;
+        top: 2px;
       }
     }
     .price-img-1 {
@@ -185,6 +187,7 @@
     .price-img-2 {
       display: block!important;
     }
+
   }
 }
 @media only screen and (max-width : 480px) {
