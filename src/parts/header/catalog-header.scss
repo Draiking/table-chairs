@@ -1,0 +1,15 @@
+.catalog-header{
+  min-height: 0;
+  height: 188px;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 188px;
+    background-color: $black;
+    opacity: .85;
+  }
+
+
+
+}

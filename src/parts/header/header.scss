@@ -270,6 +270,7 @@
     .icon {
       z-index: 1000;
       position: relative;
+      top: -7px;
     }
     .modal-dialog{
       margin: 0;
@@ -465,7 +466,6 @@
     .icon-modal {
       display: block;
       text-align: right;
-      top: -20px;
       position: absolute;
       right: 0;
       .icon{
@@ -490,12 +490,24 @@
   }
 }
 
+@media only screen and (max-width : 575px) {
+  .main-head {
+    .icon-modal {
+      top: -20px;
+    }
+  }
+}
+
 @media only screen and (max-width : 480px) {
   .main-head {
     .phone {
       span {
         font-size: 17px;
       }
+    }
+
+    .main-search {
+      top: 20px;
     }
 
     .range {
@@ -553,7 +565,7 @@
       background: transparent;
       border: none;
       position: absolute;
-      right: 0;
+      right: -12px;
       &:hover {
         color: $accent-yellow;
       }

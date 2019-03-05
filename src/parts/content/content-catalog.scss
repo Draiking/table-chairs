@@ -1,0 +1,30 @@
+.catalog-table {
+  padding-top: 40px;
+
+  .crumbs {
+    li {
+      display: inline-block;
+      a {
+        color: $brown;
+      }
+      &.active {
+        a {
+          color: $brown-10;
+        }
+      }
+    }
+  }
+
+  .fa {
+    color: $brown;
+  }
+
+  .void {
+    font-family: 'Georgia Bold Italic', sans-serif;
+  }
+
+  input[type='range'] {
+    height: 1px;
+  }
+
+}

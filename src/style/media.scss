@@ -69,6 +69,17 @@
       display: none;
     }
   }
+
+  .section-2 {
+    background-image: url(../img/grid-section3-2.png) !important;
+  }
+}
+@media only screen and (min-width : 1200px) {
+  .section-2 {
+    .pr300{
+      padding-right: 0;
+    }
+  }
 }
 	/**/
 

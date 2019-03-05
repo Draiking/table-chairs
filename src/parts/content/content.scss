@@ -97,6 +97,9 @@
       padding: 45px 20px;
       .button {
         top: 64px;
+        &:active {
+          top: 72px;
+        }
       }
     }
   }
@@ -134,6 +137,9 @@
       .btn {
         white-space: normal;
         top: 32px;
+        &:active {
+          top: 40px;
+        }
       }
     }
     .card-title {
@@ -183,6 +189,9 @@
       }
       .button {
         top: 2px;
+        &:active{
+          top: 10px;
+        }
       }
     }
     .price-img-1 {

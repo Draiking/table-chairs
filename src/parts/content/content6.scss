@@ -18,15 +18,15 @@
   .part {
     display: inline-block;
     background-repeat: no-repeat;
-    height: 148px;
-    width: 25%;
+    height: 118px;
+    width: 159px;
     position: relative;
     flex-grow: 1;
   }
 
   .border {
     border: 1px solid $accent-yellow;
-    height: 148px;
+    height: 118px;
     bottom: 10px;
     position: absolute;
     right: 5px;
@@ -61,7 +61,7 @@
   }
 
   .youtube-feedback {
-    height: 148px;
+    height: 117px;
     width: 160px;
     p {
       font-family: 'Open Sans Light', arial;
@@ -92,6 +92,13 @@
     .button {
       padding: 8px 18px;
     }
+    .youtube-feedback {
+      p {
+        font-size: 11px!important;
+        padding-left: 10px!important;
+        padding-right: 9px!important;
+      }
+    }
   }
 }
 @media only screen and (max-width : 991px) {
@@ -115,6 +122,13 @@
   .section-6 {
     iframe {
       width: 100%;
+    }
+    .youtube-feedback {
+      p {
+        font-size: 12px!important;
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+      }
     }
     .feedback-custom {
       padding-left: 0;
@@ -180,6 +194,13 @@
   .section-6 {
     iframe {
       width: 290px;
+    }
+    .youtube-feedback {
+      p {
+        font-size: 11px!important;
+        padding-left: 10px!important;
+        padding-right: 9px!important;
+      }
     }
 
     .d-flex {

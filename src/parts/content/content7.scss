@@ -27,11 +27,12 @@
     position: relative;
     display: inline-block;
     .img {
-      width: 108px;
-      height: 108px;
+      width: 91px;
+      height: 66px;
       background-repeat: no-repeat;
       border: 2px solid $accent-yellow;
       box-shadow: inset 0px 0px 300px 154px rgba(0,0,0,0.34);
+      background-position: center;
     }
   }
 
@@ -74,6 +75,12 @@
         padding-bottom: 0!important;
       }
     }
+    .p-mar {
+      margin-bottom: 0;
+    }
+    .certificate-img {
+      top: 3px;
+    }
   }
 }
 @media only screen and (width : 992px) {
@@ -114,5 +121,10 @@
       width: 300px!important;
       height: 320px!important;
     }
+  }
+}
+@media only screen and (min-width : 1200px) {
+  .section-7 {
+
   }
 }
