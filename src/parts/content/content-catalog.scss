@@ -126,6 +126,11 @@
      }
    }
 
+  .card-img-top {
+    width: 100%;
+  }
+
+
    .card {
      box-shadow: 8px 8px rgba(47,47,47,.3);
      border-radius: 0;
@@ -215,6 +220,10 @@
     }
     .max-price {
       width: 100%;
+    }
+
+    .card-px {
+      padding: 0 15px;
     }
 
     .card3 {
