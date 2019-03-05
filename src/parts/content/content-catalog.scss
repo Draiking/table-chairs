@@ -111,4 +111,75 @@
     }
   }
 
+  .card {
+    box-shadow: 8px 8px rgba(47,47,47,.3);
+    border-radius: 0;
+    width: 263px;
+    display: inline-block;
+  }
+
+  .card-title {
+    font-family: "Georgia Bold Italic",sans-serif;
+    font-size: 16px;
+  }
+
+  .card-body {
+    font-family: "Open Sans Light",sans-serif;
+    p{
+      color: $gray-20;
+    }
+  }
+
+  .price {
+    span {
+      color: $brown;
+      font-family: 'Georgia',sans-serif;
+    }
+  }
+
+  .stars {
+    font-size: 12px;
+  }
+
+  .border {
+    border: 2px solid $brown;
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    width: 100%;
+    height: 256px;
+    .button {
+      position: absolute;
+      border-radius: 0;
+      right: 0;
+    }
+  }
+
+  .number-page {
+    display: inline-block;
+  }
+
+  .page {
+    display: inline-block;
+    ul{
+      padding-left: 0;
+    }
+    li {
+      list-style-type: none;
+      display: inline-block;
+    }
+    a {
+      padding-right: 15px;
+      color: $brown;
+      font-family: "Open Sans Light",sans-serif;
+      &.active {
+        color: $black;
+        font-family: "Georgia Regular",sans-serif;
+        font-size: 24px;
+      }
+    }
+  }
+
+
 }

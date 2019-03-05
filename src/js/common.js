@@ -1,6 +1,19 @@
 $(document).ready(function() {
 
-
+    $(".navigation-link").click(function () {
+        var id = $(this).attr('id');
+        localStorage.setItem('currentId', id);
+    });
+    function setActive() {
+        $('.navigation-link').each(function (key, item) {
+            item.classList.remove('active');
+        });
+        var id = localStorage.getItem('currentId');
+        document.getElementById(id).classList.add('active');
+        /*var element = document.getElementById(id);
+        element.classList.add('active');*/
+    }
+    setActive();
 
     var sliderB = new Slider("#ex18b", {
         min: 0,
