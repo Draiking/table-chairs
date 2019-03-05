@@ -1,208 +1,250 @@
 .catalog-table {
-  background-color: $gray-30;
-  padding-top: 40px;
+   background-color: $gray-30;
+   padding-top: 40px;
 
-  .crumbs {
-    li {
-      display: inline-block;
-      a {
-        color: $brown;
+   .crumbs {
+     li {
+       display: inline-block;
+       a {
+         color: $brown;
+       }
+       &.active {
+         a {
+           color: $brown-10;
+         }
+       }
+     }
+   }
+
+   .fa {
+     color: $brown;
+   }
+
+   .void {
+     font-family: 'Georgia Bold Italic', sans-serif;
+   }
+
+   .slider-horizontal {
+     width: 97%;
+   }
+
+   .slider-track {
+     height: 1px!important;
+     margin-top: 0!important;
+     background-image: linear-gradient(to bottom, $gray-70 0%, $gray-70 100%);
+   }
+
+   .slider-selection {
+     background-image: linear-gradient(to bottom, $green-10 0%, $green-10 100%);
+   }
+
+   .slider-handle.round {
+     border-radius: 0;
+     background-image: linear-gradient(to bottom, $green-10 0%, $green-10 100%);
+   }
+
+   .input-price {
+     display: flex;
+   }
+
+   .min-price {
+     height: 32px;
+     width: 115px;
+     border: 2px solid $gray-70;
+   }
+
+   .max-price {
+     height: 32px;
+     width: 115px;
+     border: 2px solid $gray-70;
+   }
+
+   .input-color {
+     .checkbox {
+       display: inline-block;
+       width: 27px;
+       height: 27px;
+       border: none;
+     }
+     .checkbox1 {
+       background-color: $white-11;
+     }
+     .checkbox2 {
+       background-color: $pink-10;
+     }
+     .checkbox3 {
+       background-color: $brown-20;
+     }
+     .checkbox4 {
+       background-color: $brown-30;
+     }
+     .checkbox5 {
+       background-color: $brown-40;
+     }
+     .checkbox6 {
+       background-color: $brown-50;
+     }
+     .checkbox7 {
+       background-color: $brown-60;
+     }
+   }
+
+   .input-size {
+     font-family: "Open Sans Light", sans-serif;
+   }
+
+   .left-size {
+     display: inline-block;
+     width: 50%;
+   }
+
+   .right-size {
+     display: inline-block;
+     width: 50%;
+     float: right;
+   }
+
+   .checkbox-border {
+     background: $white;
+   }
+
+   .catalog-void {
+     font-family: "Georgia Bold Italic", sans-serif;
+     a {
+       position: relative;
+       bottom: 5px;
+       padding-left: 10px;
+       color: $brown;
+     }
+   }
+   .text-price {
+     h3 {
+       font-family: "Georgia Bold Italic",sans-serif;
+     }
+     p {
+       font-family: "Open Sans Light",sans-serif;
+     }
+   }
+
+   .card {
+     box-shadow: 8px 8px rgba(47,47,47,.3);
+     border-radius: 0;
+     width: 263px;
+     display: inline-block;
+   }
+
+  .cards {
+    display: inline-block;
+  }
+
+   .card-title {
+     font-family: "Georgia Bold Italic",sans-serif;
+     font-size: 16px;
+   }
+
+   .card-body {
+     font-family: "Open Sans Light",sans-serif;
+     p{
+       color: $gray-20;
+     }
+   }
+
+   .price {
+     span {
+       color: $brown;
+       font-family: 'Georgia',sans-serif;
+     }
+   }
+
+   .stars {
+     font-size: 12px;
+   }
+
+   .border {
+     border: 2px solid $brown;
+     display: block;
+     position: absolute;
+     top: -10px;
+     right: 10px;
+     width: 100%;
+     height: 256px;
+     .button {
+       position: absolute;
+       border-radius: 0;
+       right: 0;
+     }
+   }
+
+   .number-page {
+     display: inline-block;
+   }
+
+   .page {
+     display: inline-block;
+     ul{
+       padding-left: 0;
+     }
+     li {
+       list-style-type: none;
+       display: inline-block;
+     }
+     a {
+       padding-right: 15px;
+       color: $brown;
+       font-family: "Open Sans Light",sans-serif;
+       &.active {
+         color: $black;
+         font-family: "Georgia Regular",sans-serif;
+         font-size: 24px;
+       }
+     }
+   }
+
+   .hit-price {
+     background-color: $white;
+   }
+
+   .hit-text {
+     font-family: "Georgia Bold Italic",sans-serif;
+   }
+ }
+@media only screen and (max-width : 1200px) {
+  .catalog-table {
+    .min-price {
+      width: 100%;
+    }
+    .max-price {
+      width: 100%;
+    }
+
+    .card3 {
+      margin-top: 30px;
+      margin-right: 20px;
+    }
+
+    .card4 {
+      margin-top: 30px;
+    }
+
+    .card5 {
+      margin-top: 30px;
+    }
+
+    .card6 {
+      margin-top: 30px;
+    }
+
+    .number-page {
+      padding-top: 30px;
+    }
+    .price-ottoman {
+      .col-lg-3 {
+        margin: 0 100px;
+        margin-bottom: 30px;
       }
-      &.active {
-        a {
-          color: $brown-10;
-        }
-      }
     }
   }
-
-  .fa {
-    color: $brown;
-  }
-
-  .void {
-    font-family: 'Georgia Bold Italic', sans-serif;
-  }
-
-  .slider-horizontal {
-    width: 97%;
-  }
-
-  .slider-track {
-    height: 1px!important;
-    margin-top: 0!important;
-    background-image: linear-gradient(to bottom, $gray-70 0%, $gray-70 100%);
-  }
-
-  .slider-selection {
-    background-image: linear-gradient(to bottom, $green-10 0%, $green-10 100%);
-  }
-
-  .slider-handle.round {
-    border-radius: 0;
-    background-image: linear-gradient(to bottom, $green-10 0%, $green-10 100%);
-  }
-
-  .input-price {
-    display: flex;
-  }
-
-  .min-price {
-    height: 32px;
-    width: 115px;
-    border: 2px solid $gray-70;
-  }
-
-  .max-price {
-    height: 32px;
-    width: 115px;
-    border: 2px solid $gray-70;
-  }
-
-  .input-color {
-    .checkbox {
-      display: inline-block;
-      width: 27px;
-      height: 27px;
-      border: none;
-    }
-    .checkbox1 {
-      background-color: $white-11;
-    }
-    .checkbox2 {
-      background-color: $pink-10;
-    }
-    .checkbox3 {
-      background-color: $brown-20;
-    }
-    .checkbox4 {
-      background-color: $brown-30;
-    }
-    .checkbox5 {
-      background-color: $brown-40;
-    }
-    .checkbox6 {
-      background-color: $brown-50;
-    }
-    .checkbox7 {
-      background-color: $brown-60;
-    }
-  }
-
-  .input-size {
-    font-family: "Open Sans Light", sans-serif;
-  }
-
-  .left-size {
-    display: inline-block;
-    width: 50%;
-  }
-
-  .right-size {
-    display: inline-block;
-    width: 50%;
-    float: right;
-  }
-
-  .checkbox-border {
-    background: $white;
-  }
-
-  .catalog-void {
-    font-family: "Georgia Bold Italic", sans-serif;
-    a {
-      position: relative;
-      bottom: 5px;
-      padding-left: 10px;
-      color: $brown;
-    }
-  }
-  .text-price {
-    h3 {
-      font-family: "Georgia Bold Italic",sans-serif;
-    }
-    p {
-      font-family: "Open Sans Light",sans-serif;
-    }
-  }
-
-  .card {
-    box-shadow: 8px 8px rgba(47,47,47,.3);
-    border-radius: 0;
-    width: 263px;
-    display: inline-block;
-  }
-
-  .card-title {
-    font-family: "Georgia Bold Italic",sans-serif;
-    font-size: 16px;
-  }
-
-  .card-body {
-    font-family: "Open Sans Light",sans-serif;
-    p{
-      color: $gray-20;
-    }
-  }
-
-  .price {
-    span {
-      color: $brown;
-      font-family: 'Georgia',sans-serif;
-    }
-  }
-
-  .stars {
-    font-size: 12px;
-  }
-
-  .border {
-    border: 2px solid $brown;
-    display: block;
-    position: absolute;
-    top: -10px;
-    right: 10px;
-    width: 100%;
-    height: 256px;
-    .button {
-      position: absolute;
-      border-radius: 0;
-      right: 0;
-    }
-  }
-
-  .number-page {
-    display: inline-block;
-  }
-
-  .page {
-    display: inline-block;
-    ul{
-      padding-left: 0;
-    }
-    li {
-      list-style-type: none;
-      display: inline-block;
-    }
-    a {
-      padding-right: 15px;
-      color: $brown;
-      font-family: "Open Sans Light",sans-serif;
-      &.active {
-        color: $black;
-        font-family: "Georgia Regular",sans-serif;
-        font-size: 24px;
-      }
-    }
-  }
-
-  .hit-price {
-    background-color: $white;
-  }
-
-  .hit-text {
-    font-family: "Georgia Bold Italic",sans-serif;
-  }
-
-
 }
+
+
+@import "../../style/media";
