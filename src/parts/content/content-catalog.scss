@@ -1,4 +1,5 @@
 .catalog-table {
+  background-color: $gray-30;
   padding-top: 40px;
 
   .crumbs {
@@ -25,7 +26,6 @@
 
   .input-range {
     input[type=range] {
-      height: 21px;
       -webkit-appearance: none;
       margin: 10px 0;
       width: 97%;
@@ -151,7 +151,25 @@
     .checkbox7 {
       background-color: $brown-60;
     }
-  ;
+  }
+
+  .input-size {
+    font-family: "Open Sans Light", sans-serif;
+  }
+
+  .left-size {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .right-size {
+    display: inline-block;
+    width: 50%;
+    float: right;
+  }
+
+  .checkbox-border {
+    background: $white;
   }
 
 
