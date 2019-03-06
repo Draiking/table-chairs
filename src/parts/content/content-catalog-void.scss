@@ -1,0 +1,28 @@
+.catalog-void {
+  background-color: $white-1000;
+  padding-top: 40px;
+
+  .crumbs {
+    font-family: "Georgia Bold Italic", sans-serif;
+    li {
+      display: inline-block;
+      a {
+        color: $brown;
+      }
+      &.active {
+        a {
+          color: $brown-10;
+        }
+      }
+    }
+  }
+
+  .fa {
+    color: $brown;
+    position: relative;
+    top: 1px;
+  }
+
+
+
+}

@@ -3,6 +3,7 @@
    padding-top: 40px;
 
    .crumbs {
+     font-family: "Georgia Bold Italic", sans-serif;
      li {
        display: inline-block;
        a {
@@ -18,6 +19,8 @@
 
    .fa {
      color: $brown;
+     position: relative;
+     top: 1px;
    }
 
    .void {

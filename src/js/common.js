@@ -1,11 +1,26 @@
 $(document).ready(function() {
 
 
+
     $(".toggle-menu").click(function () {
         $(this).toggleClass("on");
         $(".main-menu").toggleClass('d-block');
     });
 
+
+    var sliderB = new Slider("#ex18b", {
+        min: 0,
+        max: 10,
+        value: [3, 6],
+        labelledby: ['ex18-label-2a', 'ex18-label-2b']
+    });
+
+    sliderB.on("slide",function (value) {
+        if(value && value.length>0) {
+            $("#min").val(value[0]);
+            $("#max").val(value[1]);
+        }
+    });
 
 
 
@@ -24,19 +39,7 @@ $(document).ready(function() {
     }
     setActive();
 
-    var sliderB = new Slider("#ex18b", {
-        min: 0,
-        max: 10,
-        value: [3, 6],
-        labelledby: ['ex18-label-2a', 'ex18-label-2b']
-    });
 
-    sliderB.on("slide",function (value) {
-        if(value && value.length>0) {
-            $("#min").val(value[0]);
-            $("#max").val(value[1]);
-        }
-    });
 
 
 
@@ -95,11 +98,6 @@ $(document).ready(function() {
             .add(myPlacemark)
             .add(myPlacemarkWithContent);
     });
-
-
-
-
-
 
 
 });
