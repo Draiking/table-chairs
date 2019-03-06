@@ -252,6 +252,15 @@
         margin-bottom: 30px;
       }
     }
+    .checkbox {
+      margin: 5px 0;
+    }
+    .min-price {
+      width: 80px;
+    }
+    .max-price {
+      width: 105px;
+    }
   }
 }
 
@@ -259,9 +268,11 @@
   .catalog-table {
     .min-price {
       font-size: 10px;
+      width: 60px;
     }
     .max-price {
       font-size: 10px;
+      width: 70px;
     }
     .control-checkbox {
       font-size: 14px!important;
@@ -283,6 +294,9 @@
     .hit-price {
       text-align: center;
     }
+    .checkbox {
+      margin: 5px 0;
+    }
   }
 }
 
@@ -290,9 +304,11 @@
   .catalog-table {
     .max-price {
       font-size: 14px!important;
+      width: 100%;
     }
     .min-price {
       font-size: 14px!important;
+      width: 100%;
     }
     .left-size {
       width: 34%;
@@ -303,6 +319,9 @@
     .card-px {
       text-align: center;
     }
+    .card {
+      text-align: left;
+    }
     .text-price {
       p{
         padding-right: 50px;
@@ -312,6 +331,48 @@
       position: relative;
       left: 50%;
       transform: translateX(-50%);
+    }
+    .void {
+      h1 {
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+      }
+    }
+    .void-price {
+      text-align: left!important;
+    }
+    .color-void {
+      text-align: left!important;
+    }
+    .card-top {
+      .row {
+        width: auto!important;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 767px) {
+  .catalog-table {
+    .crumbs {
+      .row {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 576px) {
+  .catalog-table {
+    .store-selection {
+      padding: 0 20px;
+    }
+    .crumbs {
+      padding: 0 20px;
+    }
+    .hit-price {
+      padding-top: 30px;
+      padding-bottom: 0;
     }
   }
 }

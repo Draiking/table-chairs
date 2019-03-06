@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+
+    $(".toggle-menu").click(function () {
+        $(this).toggleClass("on");
+        $(".main-menu").toggleClass('d-block');
+    });
+
+
+
+
     $(".navigation-link").click(function () {
         var id = $(this).attr('id');
         localStorage.setItem('currentId', id);
@@ -31,10 +40,6 @@ $(document).ready(function() {
 
 
 
-    $(".toggle-menu").click(function () {
-        $(this).toggleClass("on");
-        $(".main-menu").toggleClass('d-block');
-    });
 
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {

@@ -10,3 +10,17 @@
     opacity: .85;
   }
 }
+
+@media only screen and (max-width : 480px) {
+  .catalog-header {
+    .main-search {
+      top: 40px;
+    }
+    .toggle-menu {
+      top: 30px;
+    }
+  }
+}
+
+
+@import "../../style/media";
