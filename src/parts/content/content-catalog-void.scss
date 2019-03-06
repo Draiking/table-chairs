@@ -23,6 +23,164 @@
     top: 1px;
   }
 
+  .void-texts {
+    background-color: $white;
+  }
+
+  .stars-void {
+    font-size: 12px;
+    .fa {
+      color: $white-20;
+      top: 0;
+    }
+  }
+
+
+  .name-void {
+    font-family: "Georgia Bold Italic",sans-serif;
+  }
+
+  .text-void {
+    font-family: "Open Sans Light",sans-serif;
+    font-size: 14px;
+  }
+
+  .input-color {
+    .checkbox {
+      display: inline-block;
+      width: 27px;
+      height: 27px;
+      border: none;
+    }
+    .checkbox1 {
+      background-color: $white-11;
+    }
+    .checkbox2 {
+      background-color: $pink-10;
+    }
+    .checkbox3 {
+      background-color: $brown-20;
+    }
+    .checkbox4 {
+      background-color: $brown-30;
+    }
+    .checkbox5 {
+      background-color: $brown-40;
+    }
+    .checkbox6 {
+      background-color: $brown-50;
+    }
+    .checkbox7 {
+      background-color: $brown-60;
+    }
+  }
+
+  .old-price {
+    font-family: "Open Sans Light",sans-serif;
+    color: $gray-20;
+  }
+
+  .new-price-void {
+    color: $brown;
+  }
+
+  .new-price-void {
+    font-family: "Georgia Regular",sans-serif;
+  }
+
+  .size-choice {
+    background: transparent;
+    border-color: transparent;
+    position: relative;
+    bottom: 3px;
+    color: $accent-yellow;
+    font-size: 24px;
+    font-family: "Open Sans ExtraBold",sans-serif;
+    cursor: pointer;
+  }
+
+  .voids-prices {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 3px;
+    border: 2px solid $gray-70;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  .voids-price-button {
+    .button {
+      font-family: "Open Sans ExtraBold", sans-serif;
+      padding: 12px 44px;
+      position: relative;
+      box-shadow: 8px 8px rgba(47,47,47,.3);
+      top: 0;
+      left: 0;
+      box-shadow: 8px 8px rgba(47,47,47,.3);
+      transition: all .7s ease!important;
+      &:active {
+        box-shadow: none !important;
+        transition: all 1s ease !important;
+        top: 8px;
+        left: 8px;
+      }
+    }
+  }
+
+  .border {
+    position: absolute;
+    border: 1px solid $accent-yellow;
+    height: 700px;
+    top: 290px;
+    width: 90%;
+    left: 40px;
+    display: inline-block;
+    border-right: none;
+    border-left: none;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 1px;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+      border-right: 1px solid $accent-yellow;
+    }
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 1px;
+      top: 0;
+      left: 0;
+      height: 100%;
+      z-index: 10;
+      border-right: 1px solid $accent-yellow;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
