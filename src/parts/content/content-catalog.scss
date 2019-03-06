@@ -360,6 +360,17 @@
         width: 100%;
       }
     }
+    .text-price {
+      p{
+        padding-right: 0;
+      }
+    }
+    .card-top {
+      display: inline-block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 @media only screen and (max-width : 576px) {
@@ -373,6 +384,36 @@
     .hit-price {
       padding-top: 30px;
       padding-bottom: 0;
+      .row {
+        margin: 0;
+      }
+    }
+
+  }
+}
+@media only screen and (max-width : 508px) {
+  .catalog-table {
+    .card {
+      width: 263px;
+    }
+    .card2 {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width : 387px) {
+  .catalog-table {
+    .min-price {
+      width: 80px!important;
+    }
+    .max-price {
+      width: 105px!important;
+    }
+    .price-ottoman {
+      .container {
+        padding: 0;
+      }
     }
   }
 }
