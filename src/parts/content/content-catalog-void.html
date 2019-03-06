@@ -2,7 +2,7 @@
     <div class="crumbs pb60">
         <div class="container px0">
             <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="crumb fs14">
                         <ul class="px0">
                             <li><a href="#">Главная <i class="fa fa-angle-right"></i></a></li>
@@ -16,10 +16,10 @@
         </div>
     </div>
     <div class="table-void">
-        <div class="border"></div>
+        <div class="border-void"></div>
         <div class="container w-100">
             <div class="row">
-                <div class="col-xl-6 px0">
+                <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 px0">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -39,8 +39,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 px0">
-                    <div class="void-texts bgi h-100 pl58 pr150" style="background-image: url(./img/catalog-void/creat-void.png)">
+                <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 px0">
+                    <div class="void-texts bgi h-100 pl58 pr100" style="background-image: url(./img/catalog-void/creat-void.png)">
                         <div class="name-void pt50">
                             <h1 class="fs24">Стол Sagrada</h1>
                         </div>
@@ -87,10 +87,10 @@
                             <s class="fs16">18 000</s>
                         </div>
                         <div class="voids-price-button">
-                            <div class="new-price-void pr40 pt20 d-inline-block">
+                            <div class="new-price-void pr20 pt20 d-inline-block">
                                 <span class="fs36">12 000 р.</span>
                             </div>
-                            <div class="choice d-inline-block pr50">
+                            <div class="choice d-inline-block pr30">
                                 <button class="size-choice px13">-</button>
                                 <input class="voids-prices" type="text" placeholder="1">
                                 <button class="size-choice px13">+</button>
@@ -102,5 +102,84 @@
             </div>
         </div>
     </div>
-    .
+    <div class="bottom-button pt13">
+        <button> <i class="far fa-circle"></i></button>
+        <button><i class="fas fa-circle"></i></button>
+        <button> <i class="far fa-circle"></i></button>
+    </div>
+    <div class="specifications-text pt55">
+        <div class="container px0">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-3">
+                    <div class="title">
+                        <h1 class="fs26">Характеристики
+                        <div class="border-bottom"></div>
+                        </h1>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-9">
+                    <div class="title-menu fs18">
+                        <ul>
+                            <li><a href="#">Описание</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оплата</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="description-menu pb70 pt60">
+        <div class="container px0">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="top-description">
+                        <h5 class="fs14">Коллекция</h5>
+                        <p class="fs14">Azzuro 332685</p>
+                    </div>
+                    <div class="center-border"></div>
+                    <div class="bottom-description pt35">
+                        <h5 class="fs14">Материал<br>
+                            основания:</h5>
+                        <p class="fs14">ЛДСП, стекло<br>
+                            (матовое)</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="top-description">
+                        <h5 class="fs14">Гарантия:</h5>
+                        <p class="fs14">5 лет</p>
+                    </div>
+                    <div class="center-border"></div>
+                    <div class="bottom-description pt35">
+                        <h5 class="fs14">Цвет:</h5>
+                        <p class="fs14">крем, венге</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="top-description">
+                        <h5 class="fs14">Материал<br>
+                            столешницы</h5>
+                        <p class="fs14">ЛДСП, стекло<br>
+                            (матовое)</p>
+                    </div>
+                    <div class="center-border"></div>
+                    <div class="bottom-description pt35">
+                        <h5 class="fs14">Количество мест:</h5>
+                        <p class="fs14">от 6 до 8</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product-void pb84">
+        <div class="container">
+            <div class="row">
+                <h1 class="fs26 pt77 pb40">С этим товаром смотрели</h1>
+            </div>
+        </div>
+        @@include('./content3-card.html')
+    </div>
 </section>
+
