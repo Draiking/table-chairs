@@ -336,3 +336,61 @@
     }
   }
 }
+@media only screen and (max-width : 575px) {
+  .catalog-void {
+    .old-price {
+      padding-top: 20px;
+    }
+    .description-menu {
+      .container {
+        padding: 0 15px;
+      }
+    }
+    .specifications-text {
+      .container {
+        padding: 0 15px!important;
+      }
+    }
+    .product-void {
+      text-align: center;
+    }
+    .price-ottoman {
+      .pt0 {
+        padding-top: 0;
+      }
+      .card {
+        margin-top: 25px;
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 575px) {
+  .catalog-void {
+    .voids-prices {
+      margin: 20px 0;
+    }
+    .checkbox {
+      margin: 10px 0;
+    }
+    .price-ottoman {
+      .card {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .crumbs {
+      padding: 0 15px;
+    }
+  }
+}
+@media only screen and (max-width : 400px) {
+  .catalog-void {
+    .price-ottoman {
+      .card {
+        width: 80% !important;
+      }
+    }
+  }
+}
