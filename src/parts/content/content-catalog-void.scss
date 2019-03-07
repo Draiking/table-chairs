@@ -35,13 +35,12 @@
     }
   }
 
-
   .name-void {
-    font-family: "Georgia Bold Italic",sans-serif;
+    font-family: "Georgia Bold Italic", sans-serif;
   }
 
   .text-void {
-    font-family: "Open Sans Light",sans-serif;
+    font-family: "Open Sans Light", sans-serif;
     font-size: 14px;
   }
 
@@ -76,7 +75,7 @@
   }
 
   .old-price {
-    font-family: "Open Sans Light",sans-serif;
+    font-family: "Open Sans Light", sans-serif;
     color: $gray-20;
   }
 
@@ -85,7 +84,7 @@
   }
 
   .new-price-void {
-    font-family: "Georgia Regular",sans-serif;
+    font-family: "Georgia Regular", sans-serif;
   }
 
   .size-choice {
@@ -95,7 +94,7 @@
     bottom: 3px;
     color: $accent-yellow;
     font-size: 24px;
-    font-family: "Open Sans ExtraBold",sans-serif;
+    font-family: "Open Sans ExtraBold", sans-serif;
     cursor: pointer;
   }
 
@@ -114,11 +113,10 @@
       font-family: "Open Sans ExtraBold", sans-serif;
       padding: 12px 44px;
       position: relative;
-      box-shadow: 8px 8px rgba(47,47,47,.3);
       top: 0;
       left: 0;
-      box-shadow: 8px 8px rgba(47,47,47,.3);
-      transition: all .7s ease!important;
+      box-shadow: 8px 8px rgba(47, 47, 47, .3);
+      transition: all .7s ease !important;
       &:active {
         box-shadow: none !important;
         transition: all 1s ease !important;
@@ -166,7 +164,7 @@
   .bottom-button {
     text-align: center;
     z-index: 1050;
-    button{
+    button {
       background: transparent;
       border: none;
       cursor: pointer;
@@ -179,7 +177,7 @@
   .title {
     font-family: "Georgia Bold Italic", sans-serif;
     h1 {
-      &:hover{
+      &:hover {
         .border-bottom {
           border-bottom: 2px solid $accent-yellow;
           width: 100%;
@@ -213,15 +211,15 @@
   .top-description {
     h5 {
       display: inline-block;
-      font-family: "Georgia Bold Italic",sans-serif;
+      font-family: "Georgia Bold Italic", sans-serif;
       float: left;
     }
     p {
       display: inline-block;
-      font-family: "GeorgiaItalic",sans-serif;
+      font-family: "GeorgiaItalic", sans-serif;
       float: right;
     }
-    span{
+    span {
       display: none;
     }
   }
@@ -235,12 +233,12 @@
   .bottom-description {
     h5 {
       display: inline-block;
-      font-family: "Georgia Bold Italic",sans-serif;
+      font-family: "Georgia Bold Italic", sans-serif;
       float: left;
     }
     p {
       display: inline-block;
-      font-family: "GeorgiaItalic",sans-serif;
+      font-family: "GeorgiaItalic", sans-serif;
       float: right;
     }
   }
@@ -248,10 +246,9 @@
   .product-void {
     background-color: $white;
     h1 {
-      font-family: "Georgia Bold Italic",sans-serif;
+      font-family: "Georgia Bold Italic", sans-serif;
     }
   }
-
 
   .price-ottoman {
     .border {
@@ -275,7 +272,8 @@
     }
   }
 }
-@media only screen and (max-width : 1300px) {
+
+@media only screen and (max-width: 1300px) {
   .catalog-void {
     .void-texts {
       padding-right: 40px;
@@ -283,7 +281,7 @@
   }
 }
 
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width: 1200px) {
   .catalog-void {
     .border-void {
       display: none;
@@ -295,7 +293,8 @@
     }
   }
 }
-@media only screen and (max-width : 992px) {
+
+@media only screen and (max-width: 992px) {
   .catalog-void {
     .price-ottoman {
       .pt0 {
@@ -304,22 +303,23 @@
     }
     .title {
       h1 {
-        font-size: 18px!important;
+        font-size: 18px !important;
       }
     }
     .title-menu {
-      font-size: 16px!important;
+      font-size: 16px !important;
     }
   }
 }
-@media only screen and (max-width : 768px) {
+
+@media only screen and (max-width: 768px) {
   .catalog-void {
     .title-menu {
       ul {
         padding: 0;
       }
     }
-    .description-menu{
+    .description-menu {
       padding-top: 20px;
     }
     .top-description {
@@ -336,7 +336,8 @@
     }
   }
 }
-@media only screen and (max-width : 575px) {
+
+@media only screen and (max-width: 575px) {
   .catalog-void {
     .old-price {
       padding-top: 20px;
@@ -348,7 +349,7 @@
     }
     .specifications-text {
       .container {
-        padding: 0 15px!important;
+        padding: 0 15px !important;
       }
     }
     .product-void {
@@ -366,7 +367,7 @@
   }
 }
 
-@media only screen and (max-width : 575px) {
+@media only screen and (max-width: 575px) {
   .catalog-void {
     .voids-prices {
       margin: 20px 0;
@@ -385,7 +386,8 @@
     }
   }
 }
-@media only screen and (max-width : 400px) {
+
+@media only screen and (max-width: 400px) {
   .catalog-void {
     .price-ottoman {
       .card {

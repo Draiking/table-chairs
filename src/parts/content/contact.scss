@@ -1,0 +1,94 @@
+.contacts {
+  background-color: $white-1000;
+
+  .top-title {
+    font-family: "Georgia Bold Italic",sans-serif;
+  }
+
+  .contact-address-phone {
+    background-color: $white;
+    padding: 45px 85px 0 25px;
+  }
+
+  .border {
+    position: absolute;
+    width: 94%;
+    height: 256px;
+    display: block;
+    border: 1px solid $accent-yellow;
+    bottom: -15px;
+    right: 30px;
+  }
+
+  .address {
+    h5 {
+      font-family: "Georgia Bold Italic", sans-serif;
+    }
+    p {
+      font-family: "Open Sans Light", sans-serif;
+    }
+  }
+
+  .email {
+    h5 {
+      font-family: "Georgia Bold Italic", sans-serif;
+    }
+    p {
+      font-family: "Open Sans Light", sans-serif;
+    }
+  }
+
+  .phone {
+    h5 {
+      font-family: "Georgia Bold Italic", sans-serif;
+    }
+    p {
+      font-family: "Open Sans Light", sans-serif;
+      margin: 0;
+      text-align: center;
+      position: relative;
+      bottom: 28px;
+    }
+  }
+
+  .input-form {
+    input {
+      font-family: "Georgia Bold Italic", sans-serif;
+      font-size: 14px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid $black;
+    }
+  }
+
+  .button {
+    font-family: "Open Sans ExtraBold", sans-serif;
+    font-size: 12px;
+    color: $brown;
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: 8px 8px rgba(47, 47, 47, .3);
+    transition: all .7s ease !important;
+    &:active {
+      box-shadow: none !important;
+      transition: all 1s ease !important;
+      top: 8px;
+      left: 8px;
+    }
+  }
+
+  textarea {
+    font-family: "Georgia Bold Italic", sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 224px;
+    left: 0;
+    top: 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $black;
+  }
+
+
+}
