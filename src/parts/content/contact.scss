@@ -81,7 +81,7 @@
   textarea {
     font-family: "Georgia Bold Italic", sans-serif;
     position: absolute;
-    width: 100%;
+    width: 97%;
     height: 224px;
     left: 0;
     top: 0;
@@ -89,6 +89,91 @@
     border: none;
     border-bottom: 1px solid $black;
   }
+}
 
+@media only screen and (max-width : 1200px) {
+  .contacts {
+    .contact-address-phone {
+      padding-top: 26px;
+    }
+    .phone {
+      p {
+        padding-left: 75px;
+      }
+    }
+  }
+}
 
+@media only screen and (max-width : 1010px) {
+  .contacts {
+    .border{
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width : 992px) {
+  .contacts {
+    .phone {
+      padding-bottom: 10px;
+      p {
+        display: inline-block;
+        bottom: 0px;
+        padding-left: 0;
+      }
+    }
+    .input-form {
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 767px) {
+  .contacts {
+    .phone {
+      padding-bottom: 0;
+      p {
+        display: block!important;
+        bottom: 28px!important;
+      }
+    }
+    .input-form {
+      padding-top: 20px;
+      .mb50 {
+        margin-bottom: 35px;
+      }
+      .button {
+        display: none!important;
+      }
+    }
+    textarea {
+      position: relative;
+    }
+    .button-message {
+      text-align: center;
+      .button {
+        top: 30px;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 575px) {
+  .contacts {
+    .c-px {
+      padding: 0 15px;
+    }
+    .form-contact {
+      padding-top: 20px;
+    }
+  }
+}
+@media only screen and (max-width : 480px) {
+  .contacts {
+    .phone {
+      padding-bottom: 10px;
+      p {
+        bottom: 0!important;
+      }
+    }
+  }
 }
