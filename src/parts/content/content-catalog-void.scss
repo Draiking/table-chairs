@@ -50,6 +50,8 @@
       width: 27px;
       height: 27px;
       border: none;
+      position: relative;
+      z-index: 10050;
     }
     .checkbox1 {
       background-color: $white-11;
@@ -108,11 +110,17 @@
     padding-right: 7px;
   }
 
+  .choice {
+    position: relative;
+    z-index: 10050;
+  }
+
   .voids-price-button {
     .button {
       font-family: "Open Sans ExtraBold", sans-serif;
       padding: 12px 44px;
       position: relative;
+      z-index: 10050;
       top: 0;
       left: 0;
       box-shadow: 8px 8px rgba(47, 47, 47, .3);
@@ -222,6 +230,11 @@
     span {
       display: none;
     }
+  }
+
+  .center-size {
+    position: relative;
+    z-index: 1050;
   }
 
   .center-border {
