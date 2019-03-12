@@ -79,6 +79,13 @@
   .section-2 {
     background-image: url(../img/grid-section3-2.png) !important;
   }
+
+  .section-9 {
+    background-image: url(../img/map-contact-1300.png)!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px;
+  }
 }
 @media only screen and (min-width : 1200px) {
   .section-2 {

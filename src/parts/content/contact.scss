@@ -89,6 +89,17 @@
     border: none;
     border-bottom: 1px solid $black;
   }
+
+  .section-9 {
+    min-height: 450px;
+    #map {
+      display: none;
+    }
+    .posa {
+      min-height: 450px;
+    }
+  }
+
 }
 
 @media only screen and (max-width : 1200px) {
@@ -101,6 +112,11 @@
         padding-left: 75px;
       }
     }
+  }
+  .section-9 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/map-contact.png) !important;
   }
 }
 
@@ -125,6 +141,12 @@
       input {
         width: 100%;
       }
+    }
+  }
+  .section-9 {
+    min-height: 293px!important;
+    .posa {
+      min-height: 293px!important;
     }
   }
 }
@@ -155,6 +177,9 @@
         top: 30px;
       }
     }
+  }
+  .section-9 {
+    background-image: url(../img/map-contact-766.png) !important;
   }
 }
 @media only screen and (max-width : 575px) {

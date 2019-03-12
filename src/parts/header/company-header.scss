@@ -1,0 +1,29 @@
+.company-head {
+  height: 740px;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 740px;
+    background-color: $black;
+    opacity: .65;
+  }
+
+  .slide {
+    text-align: center;
+    h1 {
+      font-family: "Georgia Regular",sans-serif;
+      padding: 0 185px;
+    }
+    p {
+      font-family: "Open Sans Light", sans-serif;
+    }
+
+  }
+
+
+
+
+
+
+}
