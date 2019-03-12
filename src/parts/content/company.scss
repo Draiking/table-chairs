@@ -1,0 +1,26 @@
+.company-sect {
+  background-color: $orange-900;
+
+
+  .sketch-cont {
+    .border {
+      position: absolute;
+      z-index: 1000;
+      border: 1px solid $green-10;
+      top: -15px;
+      left: 25px;
+      height: 450px;
+      width: 96%;
+    }
+  }
+
+  .text {
+    h1 {
+      font-family: "Georgia Bold Italic",sans-serif;
+    }
+    p {
+      font-family: "Open Sans Light",sans-serif;
+    }
+  }
+
+}
