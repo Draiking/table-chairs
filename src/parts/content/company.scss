@@ -82,6 +82,32 @@
       font-family: "Open Sans Light",sans-serif;
     }
   }
+  .phone-text {
+    text-align: center;
+    h1 {
+      font-family: "Georgia Bold Italic",sans-serif;
+    }
+    .padding-p {
+      padding: 0 174px!important;
+    }
+    p{
+      font-family: "Open Sans Light",sans-serif;
+      padding: 0 142px;
+    }
+  }
+  .phone-button {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    .button {
+      background-color: $accent-yellow;
+      font-family: "Open Sans ExtraBold",sans-serif;
+      font-size: 14px;
+      padding: 10px 35px;
+      color: $brown;
+    }
+  }
 }
 @media only screen and (max-width : 1200px) {
   .company-sect {
@@ -153,6 +179,15 @@
         height: 90%;
       }
     }
+    .phone-text {
+      padding-top: 40px!important;
+      .padding-p {
+        padding: 0!important;
+      }
+      p {
+        padding: 0;
+      }
+    }
   }
 }
 
@@ -184,6 +219,26 @@
     }
     .button-sketch {
       padding-bottom: 40px;
+    }
+    .phone-button {
+      left: 0!important;
+      transform: translateX(0%) !important;
+    }
+  }
+}
+@media only screen and (max-width : 480px) {
+  .company-sect {
+    .phone-text {
+      padding-top: 25px!important;
+      h1 {
+        font-size: 21px!important;
+      }
+      p {
+        font-size: 14px!important;
+      }
+    }
+    .phone-button {
+      padding-bottom: 30px;
     }
   }
 }
