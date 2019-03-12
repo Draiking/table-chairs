@@ -23,4 +23,40 @@
     }
   }
 
+  .title {
+    font-family: "Georgia Bold Italic",sans-serif;
+    color: $white;
+  }
+
+  .text-sketch {
+    font-family: "Open Sans Light",sans-serif;
+    text-align: center;
+    padding: 0 290px;
+    color: $white;
+  }
+
+  .button-sketch {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .button {
+    font-family: "Open Sans Light",sans-serif;
+    font-size: 14px;
+    box-shadow: 8px 8px rgba(47,47,47,.3);
+    background-color: $green-10;
+    padding: 10px 25px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all .7s ease!important;
+    &:active {
+      box-shadow: none!important;
+      transition: all 1s ease!important;
+      top: 8px;
+      left: 8px;
+    }
+  }
+
 }
