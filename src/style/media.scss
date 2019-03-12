@@ -87,5 +87,17 @@
     }
   }
 }
+@media only screen and (min-width : 1199px) {
+  .catalog-void {
+    .carousel-item {
+      .d-1200 {
+        display: none!important;
+      }
+      img {
+        display: block!important;
+      }
+    }
+  }
+}
 	/**/
 
