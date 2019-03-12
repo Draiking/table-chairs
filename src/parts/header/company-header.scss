@@ -9,6 +9,16 @@
     opacity: .65;
   }
 
+  .main-menu {
+    li {
+      &.active, &:hover {
+        a {
+          color: $orange-900!important;
+        }
+      }
+    }
+  }
+
   .slide {
     text-align: center;
     h1 {
@@ -18,12 +28,56 @@
     p {
       font-family: "Open Sans Light", sans-serif;
     }
-
   }
-
-
-
-
-
-
+}
+@media only screen and (max-width : 1200px) {
+  .company-head {
+    .slide {
+      h1 {
+        font-size: 36px!important;
+      }
+      p{
+        font-size: 16px!important;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 992px) {
+  .company-head {
+    .slide {
+      h1 {
+        padding: 0 65px!important;
+      }
+      p {
+        padding-top: 20px;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 767px) {
+  .company-head {
+    .slide {
+      h1 {
+        padding: 0!important;
+        font-size: 26px !important;
+      }
+      p {
+        padding: 0 !important;
+        font-size: 15px!important;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 480px) {
+  .company-head {
+    .slide {
+      padding: 30px 5px 20px 5px!important;
+      h1 {
+        font-size: 22px!important;
+      }
+      p {
+        font-size: 14px!important;
+      }
+    }
+  }
 }
