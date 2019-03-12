@@ -90,6 +90,10 @@
         width: 100%;
       }
     }
+    .price-company {
+      padding-right: 100px!important;
+      padding-top: 70px;
+    }
   }
 }
 @media only screen and (max-width : 992px) {
@@ -115,6 +119,12 @@
       p {
         font-size: 16px!important;
       }
+    }
+    .section-2-company {
+      height: auto!important;
+    }
+    .price-company {
+      padding: 30px 30px!important;
     }
   }
 }
