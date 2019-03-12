@@ -22,5 +22,12 @@
   }
 }
 
+.main-catalog {
+  .catalog-header {
+    .menu-catalog {
+      display: none!important;
+    }
+  }
+}
 
 @import "../../style/media";

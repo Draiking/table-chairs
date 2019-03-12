@@ -8,6 +8,17 @@ $(document).ready(function() {
     });
 
 
+
+
+    $( function() {
+        $( ".tabs" ).tabs();
+    } );
+
+
+
+
+
+
     var slider = $('#ex18b');
     if(slider && Object.keys(slider) && Object.keys(slider).length > 0){
         var sliderB = new Slider("#ex18b", {

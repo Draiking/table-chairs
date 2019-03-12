@@ -284,6 +284,10 @@
       }
     }
   }
+  .border-three {
+    position: relative;
+    bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -338,9 +342,6 @@
     .top-description {
       padding-top: 40px;
       h5 {
-        margin: 0;
-      }
-      p {
         margin: 0;
       }
     }
