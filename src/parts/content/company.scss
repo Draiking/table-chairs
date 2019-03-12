@@ -58,5 +58,122 @@
       left: 8px;
     }
   }
+  .border-sketch {
+    position: absolute;
+    z-index: 1000;
+    border: 1px solid $brown;
+    top: -15px;
+    right: 25px;
+    height: 100%;
+    width: 91%;
+  }
+  .img-sofa-two {
+    height: 477px;
+  }
+  .section-2-company {
+    background-color: $white;
+    height: 477px;
+  }
+  .price-company {
+    h3 {
+      font-family: "Georgia Bold Italic",sans-serif;
+    }
+    p {
+      font-family: "Open Sans Light",sans-serif;
+    }
+  }
+}
+@media only screen and (max-width : 1200px) {
+  .company-sect {
+    .img-sketch {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 992px) {
+  .company-sect {
+    .sketch-cont {
+      padding-bottom: 40px;
+      .bgi {
+        width: 100%;
+      }
+      .text {
+        padding: 30px 50px 20px 50px;
+      }
+    }
+    .border-sketch {
+      width: 86%!important;
+    }
+    .border {
+      left: 15px!important;
+      height: 419px!important;
+    }
+    .text-sketch {
+      padding: 0 10px;
+      p {
+        font-size: 16px!important;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 767px) {
+  .company-sect {
+    .border {
+      left: 11px !important;
+      height: 319px !important;
+    }
+    .border-sketch {
+      width: 91% !important;
+    }
+    .sketch-furniture {
+      .title {
+        text-align: center;
+      }
+      .three {
+        padding-top: 20px;
+      }
+      .four {
+        padding-top: 20px;
+      }
+      .border-sketch {
+        top: 13px;
+        right: 25px;
+        height: 90%;
+      }
+    }
+  }
+}
 
+@media only screen and (max-width: 575px) {
+  .company-sect {
+    text-align: center;
+    .border {
+      display: none;
+    }
+    .border-sketch {
+      display: none;
+    }
+    .sketch-cont {
+      padding-bottom: 20px;
+    }
+    .sketch-furniture {
+      .title {
+        padding-bottom: 16px;
+      }
+    }
+    .img-sketch {
+      padding-bottom: 35px;
+      img {
+        width: auto !important;
+      }
+      .two {
+        padding-top: 20px;
+      }
+    }
+    .button-sketch {
+      padding-bottom: 40px;
+    }
+  }
 }
