@@ -349,6 +349,9 @@
         font-size: 12px;
       }
     }
+    .title-menu {
+      padding-left: 30px;
+    }
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -404,6 +407,9 @@
     }
     .bottom-description {
       padding-top: 10px;
+    }
+    .title-menu {
+      padding-left: 0;
     }
   }
 }
