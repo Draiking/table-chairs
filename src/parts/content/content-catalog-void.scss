@@ -134,11 +134,15 @@
     }
   }
 
+  .table-void {
+    position: relative;
+  }
+
   .border-void {
     position: absolute;
     border: 1px solid $accent-yellow;
-    height: 700px;
-    top: 290px;
+    height: 100%;
+    top: 45px;
     width: 94%;
     left: 40px;
     display: inline-block;
