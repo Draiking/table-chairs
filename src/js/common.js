@@ -10,35 +10,76 @@ $(document).ready(function() {
 
 
 
-    $(function() {
-        var $tabButtonItem = $('#tab-button li'),
-            $tabSelect = $('#tab-select'),
-            $tabContents = $('.tab-contents'),
-            activeClass = 'is-active';
 
-        $tabButtonItem.first().addClass(activeClass);
-        $tabContents.not(':first').hide();
 
-        $tabButtonItem.find('a').on('click', function(e) {
-            var target = $(this).attr('href');
 
-            $tabButtonItem.removeClass(activeClass);
-            $(this).parent().addClass(activeClass);
-            $tabSelect.val(target);
-            $tabContents.hide();
-            $(target).show();
-            e.preventDefault();
+
+
+
+
+
+    var $tabButtonItem = $('#tab-button li'),
+        $tabSelect = $('#tab-select'),
+        $tabContents = $('.tab-contents'),
+        activeClass = 'is-active';
+
+   /* $tabButtonItem.first().addClass(activeClass);*/
+    $tabContents.not(':first').hide();
+    $tabContents.first().css("display", "none");
+
+
+    $('#title').click(function () {
+        $tabContents.hide();
+        $tabButtonItem.removeClass(activeClass);
+        $tabSelect.removeClass(activeClass);
+        $('#tab-select option').each(function (key, item) {
+            $('#' + item.id).removeAttr('selected');
         });
+        $("#tab-select :nth-child(1)").attr("selected", "selected");
+        $('#descr-menu').addClass('active');
+    });
 
-        $tabSelect.on('change', function() {
-            var target = $(this).val(),
-                targetSelectNum = $(this).prop('selectedIndex');
 
-            $tabButtonItem.removeClass(activeClass);
-            $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
-            $tabContents.hide();
-            $(target).show();
+    $('#tab-select').change(function (event) {
+       $('#tab-select option').each(function (key, item) {
+            $('#' + item.id).removeAttr('selected');
         });
+        $(event.target.value + 'q').attr("selected", "selected");
+        console.log( $(event.target.value + 'q'));
+        console.log(event.target.value);
+    });
+
+
+    $tabButtonItem.click(function () {
+        $('#descr-menu').removeClass('active');
+    });
+
+    $tabSelect.click(function () {
+        $('#descr-menu').removeClass('active');
+    });
+
+
+
+
+    $tabButtonItem.find('a').on('click', function(e) {
+        var target = $(this).attr('href');
+
+        $tabButtonItem.removeClass(activeClass);
+        $(this).parent().addClass(activeClass);
+        $tabSelect.val(target);
+        $tabContents.hide();
+        $(target).show();
+        e.preventDefault();
+    });
+
+    $tabSelect.on('change', function() {
+        var target = $(this).val(),
+            targetSelectNum = $(this).prop('selectedIndex');
+
+        $tabButtonItem.removeClass(activeClass);
+        $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
+        $tabContents.hide();
+        $(target).show();
     });
 
 

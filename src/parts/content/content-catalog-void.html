@@ -114,7 +114,7 @@
         <div class="container px0">
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    <div class="title">
+                    <div id="title" class="title">
                         <h1 class="fs26">Характеристики
                         <div class="border-bottom"></div>
                         </h1>
@@ -133,16 +133,12 @@
                             </div>
                             <div class="tab-select-outer">
                                 <select id="tab-select">
-                                    <option value="#tab01">Описание</option>
-                                    <option value="#tab02">Отзывы</option>
-                                    <option value="#tab03">Доставка</option>
-                                    <option value="#tab04">Оплата</option>
+                                    <option id="tab01q" value="#tab01">---</option>
+                                    <option id="tab02q" value="#tab02">Описание</option>
+                                    <option id="tab03q" value="#tab03">Отзывы</option>
+                                    <option id="tab04q" value="#tab04">Доставка</option>
+                                    <option id="tab05q" value="#tab05">Оплата</option>
                                 </select>
-                            </div>
-                            <div id="tab01" class="tab-contents">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quos aliquam
-                                    consequuntur, esse provident impedit minima porro! Laudantium laboriosam culpa quis
-                                    fugiat ea, architecto velit ab, deserunt rem quibusdam voluptatum.</p>
                             </div>
                             <div id="tab02" class="tab-contents">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quos aliquam
@@ -159,12 +155,17 @@
                                     consequuntur, esse provident impedit minima porro! Laudantium laboriosam culpa quis
                                     fugiat ea, architecto velit ab, deserunt rem quibusdam voluptatum.</p>
                             </div>
+                            <div id="tab05" class="tab-contents">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quos aliquam
+                                    consequuntur, esse provident impedit minima porro! Laudantium laboriosam culpa quis
+                                    fugiat ea, architecto velit ab, deserunt rem quibusdam voluptatum.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
         </div>
     </div>
-    <div class="description-menu pb70 pt60">
+    <div id="descr-menu" class="description-menu active pb70 pt60">
         <div class="container px0">
             <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">

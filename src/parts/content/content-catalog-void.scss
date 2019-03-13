@@ -185,6 +185,7 @@
   .title {
     font-family: "Georgia Bold Italic", sans-serif;
     h1 {
+      cursor: pointer;
       &:hover {
         .border-bottom {
           border-bottom: 2px solid $accent-yellow;
@@ -329,6 +330,15 @@
     position: relative;
     bottom: 20px;
   }
+  .tab-contents {
+    margin-bottom: 20px;
+  }
+  .description-menu {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -387,6 +397,11 @@
       height: 100% !important;
     }
   }
+  #tab-button {
+    a {
+      font-size: 14px;
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -409,6 +424,7 @@
       padding-top: 10px;
     }
     .title-menu {
+      padding-top: 15px;
       padding-left: 0;
     }
   }
