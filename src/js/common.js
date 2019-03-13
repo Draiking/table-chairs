@@ -45,8 +45,6 @@ $(document).ready(function() {
             $('#' + item.id).removeAttr('selected');
         });
         $(event.target.value + 'q').attr("selected", "selected");
-        console.log( $(event.target.value + 'q'));
-        console.log(event.target.value);
     });
 
 
@@ -54,9 +52,18 @@ $(document).ready(function() {
         $('#descr-menu').removeClass('active');
     });
 
-    $tabSelect.click(function () {
-        $('#descr-menu').removeClass('active');
+
+    $tabSelect.click(function (event) {
+
+        if (event.target.value == '#tab01'){
+            $('#descr-menu').addClass('active');
+        }
+        else {
+            $('#descr-menu').removeClass('active');
+        }
     });
+
+
 
 
 

@@ -141,8 +141,8 @@
   .border-void {
     position: absolute;
     border: 1px solid $accent-yellow;
-    height: 100%;
-    top: 45px;
+    height: 112%;
+    top: -35px;
     width: 94%;
     left: 40px;
     display: inline-block;
@@ -237,28 +237,28 @@
   }
   #tab-button li a {
     display: block;
-    padding: .5em;
+    padding: 3px;
+    border-bottom-color: transparent;
     color: $brown!important;
-    background: $white-gray;
-    border: 1px solid $gray-20;
+    border: none;
     text-align: center;
     color: #000;
     text-decoration: none;
   }
   #tab-button li a:hover,
   #tab-button .is-active a {
-    border-bottom-color: transparent;
-    background: #fff;
+    border-bottom: 1px solid $accent-yellow!important;
   }
   .tab-contents {
-    padding: .5em 2em 1em;
-    border: 1px solid #ddd;
+    border: none;
+    margin-top: 40px!important;
   }
 
   .tab-button-outer {
     display: none;
   }
   .tab-contents {
+    margin-bottom: 30px!important;
     margin-top: 20px;
   }
 
@@ -496,8 +496,18 @@
     }
   }
 }
+@media screen and (max-width: 767px) {
+  .catalog-void {
+    .title {
+      display: none;
+    }
+    #tab-select {
+      width: 100%;
+    }
+  }
+}
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .catalog-void {
     .tab-button-outer {
       position: relative;
@@ -511,6 +521,9 @@
       position: relative;
       top: -1px;
       margin-top: 0;
+    }
+    .title-menu {
+      padding-top: 0!important;
     }
   }
 }
